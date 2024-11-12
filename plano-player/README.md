@@ -65,7 +65,7 @@ The project consists of two main modes:
 
 The interactive mode allows users to play the piano in real-time.
 
-<img src="./img/piano-player.png" alt="Piano Player" width="900">
+<img src="./img/piano-player.png" alt="Piano Player Interactive" width="900">
 
 Requirements:
 
@@ -122,6 +122,8 @@ Requirements:
 ### Prepared Mode
 
 The prepared mode plays back pre-recorded sequences.
+
+<img src="./img/piano-prepared.png" alt="Piano Player Prepared Mode" width="900">
 
 Requirements:
 
