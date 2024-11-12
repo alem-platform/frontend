@@ -65,9 +65,9 @@ The project consists of two main modes:
 
 The interactive mode allows users to play the piano in real-time.
 
-![pianoplayer]("./img/Piano player.png")
+<!-- [pianoplayer]("./img/Piano player.png") -->
 
-<!-- <img src="./images/screenshot.png" alt="Screenshot" width="300" height="200"> -->
+<img src="./img/piano-player.png" alt="Piano Player" width="300" height="200">
 
 Requirements:
 
