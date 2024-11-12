@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Player</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mode-selector">
+        <button class="mode-btn active" data-mode="interactive">
+          Interactive Mode
+        </button>
+        <button class="mode-btn" data-mode="prepared">Prepared Mode</button>
+      </div>
+
+      <div class="controls">
+        <div class="interactive-controls">
+          <button id="recordBtn" class="control-btn">Record</button>
+          <button id="stopRecordBtn" class="control-btn" disabled>
+            Stop Recording
+          </button>
+          <button id="downloadBtn" class="control-btn" disabled>
+            Download Recording
+          </button>
+        </div>
+
+        <div class="prepared-controls hidden">
+          <div class="controls-file-select">
+            <input
+              type="file"
+              id="songInput"
+              accept=".json"
+              class="file-input"
+            />
+            <div class="speed-control">
+              <label for="speedRange">Speed:</label>
+              <input
+                type="range"
+                id="speedRange"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+              />
+              <span id="speedValue">1x</span>
+            </div>
+          </div>
+          <div class="controls-buttons">
+            <button id="playBtn" class="control-btn" disabled>Play</button>
+            <button id="pauseBtn" class="control-btn" disabled>Pause</button>
+            <button id="stopBtn" class="control-btn" disabled>Stop</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="piano-container">
+        <div id="piano">
+          <div class="octave" data-octave="3">
+            <div class="white-key" data-note="C3">C</div>
+            <div class="black-key" data-note="C#3">C#</div>
+            <div class="white-key" data-note="D3">D</div>
+            <div class="black-key" data-note="D#3">D#</div>
+            <div class="white-key" data-note="E3">E</div>
+            <div class="white-key" data-note="F3">F</div>
+            <div class="black-key" data-note="F#3">F#</div>
+            <div class="white-key" data-note="G3">G</div>
+            <div class="black-key" data-note="G#3">G#</div>
+            <div class="white-key" data-note="A3">A</div>
+            <div class="black-key" data-note="A#3">A#</div>
+            <div class="white-key" data-note="B3">B</div>
+          </div>
+          <div class="octave" data-octave="4">
+            <div class="white-key" data-note="C4">C</div>
+            <div class="black-key" data-note="C#4">C#</div>
+            <div class="white-key" data-note="D4">D</div>
+            <div class="black-key" data-note="D#4">D#</div>
+            <div class="white-key" data-note="E4">E</div>
+            <div class="white-key" data-note="F4">F</div>
+            <div class="black-key" data-note="F#4">F#</div>
+            <div class="white-key" data-note="G4">G</div>
+            <div class="black-key" data-note="G#4">G#</div>
+            <div class="white-key" data-note="A4">A</div>
+            <div class="black-key" data-note="A#4">A#</div>
+            <div class="white-key" data-note="B4">B</div>
+          </div>
+          <div class="octave" data-octave="5">
+            <div class="white-key" data-note="C5">C</div>
+            <div class="black-key" data-note="C#5">C#</div>
+            <div class="white-key" data-note="D5">D</div>
+            <div class="black-key" data-note="D#5">D#</div>
+            <div class="white-key" data-note="E5">E</div>
+          </div>
+        </div>
+      </div>
+      <div class="prepared-controls hidden">
+        <input type="file" id="songInput" accept=".json" class="file-input" />
+        <button id="playBtn" class="control-btn" disabled>Play</button>
+        <button id="pauseBtn" class="control-btn" disabled>Pause</button>
+        <button id="stopBtn" class="control-btn" disabled>Stop</button>
+        <div class="speed-control">
+          <label for="speedRange">Speed:</label>
+          <input
+            type="range"
+            id="speedRange"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+          />
+          <span id="speedValue">1x</span>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div id="recordingStatus" class="hidden">Recording...</div>
+        <div id="playbackStatus" class="hidden">
+          Playing: <span id="currentSong">No song loaded</span>
+        </div>
+      </div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

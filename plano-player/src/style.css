@@ -1,0 +1,236 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.prepared-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls-file-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+#speedRange {
+  width: 100%;
+  height: 30px;
+  -webkit-appearance: none;
+  background: url("./icon/notes.png") no-repeat center;
+  background-size: 100% 100%;
+  outline: none;
+  border-radius: 5px;
+}
+
+#speedRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+  background: url("./icon/musical-note.png") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+}
+
+#speedRange::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  background: url("./icon/musical-note.png") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+}
+
+.mode-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-btn:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.control-btn:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.piano-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+#piano {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  min-width: min-content;
+}
+
+.octave {
+  display: flex;
+  position: relative;
+  width: auto;
+}
+
+.white-key {
+  width: 60px;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: #666;
+  z-index: 1;
+}
+
+.black-key {
+  position: absolute;
+  width: 40px;
+  height: 60%;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.white-key.active {
+  background-color: #e3f2fd;
+}
+
+.black-key.active {
+  background-color: #666;
+}
+
+/* Position black keys */
+.black-key[data-note$="#3"],
+.black-key[data-note$="#4"],
+.black-key[data-note$="#5"] {
+  transform: translateX(-20px);
+}
+
+.black-key[data-note^="C"] {
+  left: 50px;
+}
+.black-key[data-note^="D"] {
+  left: 110px;
+}
+.black-key[data-note^="F"] {
+  left: 230px;
+}
+.black-key[data-note^="G"] {
+  left: 290px;
+}
+.black-key[data-note^="A"] {
+  left: 350px;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-bar {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+#recordingStatus {
+  color: #f44336;
+  font-weight: bold;
+}
+
+#playbackStatus {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.file-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
