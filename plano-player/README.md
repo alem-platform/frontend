@@ -67,7 +67,7 @@ The interactive mode allows users to play the piano in real-time.
 
 <img src="./img/piano-player.png" alt="Piano Player Interactive" width="900">
 
-<img src="./img/recording.png" alt="Piano Player Recording" width="900">
+<img src="./img/piano-recording.png" alt="Piano Player Recording" width="900">
 
 Requirements:
 
