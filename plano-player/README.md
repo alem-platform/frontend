@@ -65,6 +65,8 @@ The project consists of two main modes:
 
 The interactive mode allows users to play the piano in real-time.
 
+![pianoplayer-layout](plano-player/img/Piano player.png)
+
 Requirements:
 
 - Display a piano keyboard with at least 2 octaves (24 keys)
@@ -147,7 +149,7 @@ The application must have a polished and professional appearance:
 - Support multiple simultaneous key presses
 - Proper note release and decay
 - No audio glitches or delays
-- Volume control
+- Speed control of record playback
 
 ## Bonus Features
 
