@@ -65,7 +65,7 @@ The project consists of two main modes:
 
 The interactive mode allows users to play the piano in real-time.
 
-![pianoplayer-layout](plano-player/img/Piano player.png)
+![pianoplayer](./img/Piano player.png)
 
 Requirements:
 
