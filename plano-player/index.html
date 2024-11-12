@@ -17,11 +17,11 @@
 
       <div class="controls">
         <div class="interactive-controls">
-          <button id="recordBtn" class="control-btn">Record</button>
-          <button id="stopRecordBtn" class="control-btn" disabled>
+          <button id="record-btn" class="control-btn">Record</button>
+          <button id="stop-record-btn" class="control-btn" disabled>
             Stop Recording
           </button>
-          <button id="downloadBtn" class="control-btn" disabled>
+          <button id="download-btn" class="control-btn" disabled>
             Download Recording
           </button>
         </div>
@@ -30,7 +30,7 @@
           <div class="controls-file-select">
             <input
               type="file"
-              id="songInput"
+              id="song-input"
               accept=".json"
               class="file-input"
             />
@@ -38,19 +38,18 @@
               <label for="speedRange">Speed:</label>
               <input
                 type="range"
-                id="speedRange"
+                id="speed-range"
                 min="0.5"
                 max="2"
                 step="0.1"
                 value="1"
               />
-              <span id="speedValue">1x</span>
+              <span id="speed-value">1x</span>
             </div>
           </div>
           <div class="controls-buttons">
-            <button id="playBtn" class="control-btn" disabled>Play</button>
-            <button id="pauseBtn" class="control-btn" disabled>Pause</button>
-            <button id="stopBtn" class="control-btn" disabled>Stop</button>
+            <button id="play-btn" class="control-btn" disabled>Play</button>
+            <button id="stop-btn" class="control-btn" disabled>Stop</button>
           </div>
         </div>
       </div>
@@ -94,28 +93,27 @@
           </div>
         </div>
       </div>
-      <div class="prepared-controls hidden">
-        <input type="file" id="songInput" accept=".json" class="file-input" />
-        <button id="playBtn" class="control-btn" disabled>Play</button>
-        <button id="pauseBtn" class="control-btn" disabled>Pause</button>
-        <button id="stopBtn" class="control-btn" disabled>Stop</button>
+      <!-- <div class="prepared-controls hidden">
+        <input type="file" id="song-input" accept=".json" class="file-input" />
+        <button id="play-btn" class="control-btn" disabled>Play</button>
+        <button id="stop-btn" class="control-btn" disabled>Stop</button>
         <div class="speed-control">
           <label for="speedRange">Speed:</label>
           <input
             type="range"
-            id="speedRange"
+            id="speed-range"
             min="0.5"
             max="2"
             step="0.1"
             value="1"
           />
-          <span id="speedValue">1x</span>
+          <span id="speed-value">1x</span>
         </div>
-      </div>
+      </div> -->
       <div class="status-bar">
-        <div id="recordingStatus" class="hidden">Recording...</div>
-        <div id="playbackStatus" class="hidden">
-          Playing: <span id="currentSong">No song loaded</span>
+        <div id="recording-status" class="hidden">Recording...</div>
+        <div id="playback-status" class="hidden">
+          Playing: <span id="current-song">No song loaded</span>
         </div>
       </div>
     </div>

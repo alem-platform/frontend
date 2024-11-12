@@ -54,11 +54,10 @@ The project consists of two main modes:
 
 ## General Criteria
 
-- Your HTML MUST be valid according to the W3C validator
-- Your CSS MUST work on the latest versions of Chrome, Firefox, and Safari
-- Your JavaScript MUST be clear and well-organized
-- Your application MUST be responsive and work on both desktop and mobile devices
-- The project MUST work when served from a local web server
+- Your HTML MUST be valid according to the [W3C validator](https://validator.w3.org)
+- Your CSS must work on the latest versions of Chrome, Firefox, and Safari
+- Your JavaScript must be clear and well-organized
+- Your application should be fully responsive, adapting seamlessly to both desktop and mobile devices. Use media queries to adjust layout and styles based on screen size, and incorporate animations to enhance user interaction across devices.
 
 ## Mandatory Part
 
@@ -78,6 +77,26 @@ Requirements:
 - Allow downloading recordings as JSON files
 - Show visual feedback during recording
 
+> Use the following keyboard mapping to link key with corresponding note:
+
+| key | note and it's octave |     | key | note and it's octave |
+| --- | -------------------- | --- | --- | -------------------- |
+| q   | C3                   |     | 0   | D#4                  |
+| 2   | C#3                  |     | p   | E4                   |
+| w   | D3                   |     | z   | F4                   |
+| 3   | D#3                  |     | s   | F#4                  |
+| e   | E3                   |     | x   | G4                   |
+| r   | F3                   |     | d   | G#4                  |
+| 5   | F#3                  |     | c   | A4                   |
+| t   | G3                   |     | f   | A#4                  |
+| 6   | G#3                  |     | v   | B4                   |
+| y   | A3                   |     | b   | C5                   |
+| 7   | A#3                  |     | h   | C#5                  |
+| u   | B3                   |     | n   | D5                   |
+| i   | C4                   |     | j   | D#5                  |
+| 9   | C#4                  |     | m   | E5                   |
+| o   | D4                   |     |     |                      |
+
 ```json
 // Example recording JSON format
 {
@@ -92,7 +111,7 @@ Requirements:
     {
       "key": "E4",
       "startTime": 500,
-      "duration": 500
+      "duration": 1000
     }
   ]
 }
@@ -120,12 +139,11 @@ The application must have a polished and professional appearance:
 - Visible key press animations
 - Responsive layout that works on different screen sizes
 - Intuitive controls and indicators
-- Professional color scheme and typography
 - Clear mode switching interface
 
 ### Audio Requirements
 
-- Generate realistic piano sounds
+- Generate piano sounds
 - Support multiple simultaneous key presses
 - Proper note release and decay
 - No audio glitches or delays
@@ -138,7 +156,6 @@ The application must have a polished and professional appearance:
 - Different instrument sounds
 - Musical notation display
 - MIDI keyboard support
-- Share recordings via URL
 
 ## Support
 
@@ -156,6 +173,11 @@ Test each component thoroughly before moving to the next. Use console.log() to d
 
 ## Author
 
-[Your Name]
-[Contact Information]
-[Social Media Links]
+This project has been created by:
+
+Aidana Kalakova, Frontend Developer at Doodocs.kz
+
+Contacts:
+
+- Email: kalakova@doodocs.kz
+- [GitHub](https://github.com/aidana-bk)

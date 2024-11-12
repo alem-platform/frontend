@@ -5,6 +5,7 @@ class PianoPlayer {
     this.isPlaying = false;
     this.recordingStartTime = 0;
     this.recordedNotes = [];
+    this.scheduledNotes = [];
     this.activeNotes = new Map();
     this.playbackSpeed = 1;
     this.currentPlayback = null;
@@ -79,24 +80,28 @@ class PianoPlayer {
     this.setupEventListeners();
   }
 
+  clearScheduledNotes() {
+    this.scheduledNotes.forEach((timeoutId) => clearTimeout(timeoutId));
+    this.scheduledNotes = [];
+  }
+
   initializeDOM() {
     // Cache DOM elements
     this.elements = {
       modeBtns: document.querySelectorAll(".mode-btn"),
       interactiveControls: document.querySelector(".interactive-controls"),
       preparedControls: document.querySelector(".prepared-controls"),
-      recordBtn: document.getElementById("recordBtn"),
-      stopRecordBtn: document.getElementById("stopRecordBtn"),
-      downloadBtn: document.getElementById("downloadBtn"),
-      playBtn: document.getElementById("playBtn"),
-      pauseBtn: document.getElementById("pauseBtn"),
-      stopBtn: document.getElementById("stopBtn"),
-      speedRange: document.getElementById("speedRange"),
-      speedValue: document.getElementById("speedValue"),
-      songInput: document.getElementById("songInput"),
-      recordingStatus: document.getElementById("recordingStatus"),
-      playbackStatus: document.getElementById("playbackStatus"),
-      currentSong: document.getElementById("currentSong"),
+      recordBtn: document.getElementById("record-btn"),
+      stopRecordBtn: document.getElementById("stop-record-btn"),
+      downloadBtn: document.getElementById("download-btn"),
+      playBtn: document.getElementById("play-btn"),
+      stopBtn: document.getElementById("stop-btn"),
+      speedRange: document.getElementById("speed-range"),
+      speedValue: document.getElementById("speed-value"),
+      songInput: document.getElementById("song-input"),
+      recordingStatus: document.getElementById("recording-status"),
+      playbackStatus: document.getElementById("playback-status"),
+      currentSong: document.getElementById("current-song"),
       piano: document.getElementById("piano"),
       keys: document.querySelectorAll(".white-key, .black-key"),
     };
@@ -154,9 +159,6 @@ class PianoPlayer {
     // Playback controls
     this.elements.songInput.addEventListener("change", (e) => this.loadSong(e));
     this.elements.playBtn.addEventListener("click", () => this.startPlayback());
-    this.elements.pauseBtn.addEventListener("click", () =>
-      this.pausePlayback()
-    );
     this.elements.stopBtn.addEventListener("click", () => this.stopPlayback());
     this.elements.speedRange.addEventListener("input", (e) => {
       this.playbackSpeed = parseFloat(e.target.value);
@@ -222,6 +224,7 @@ class PianoPlayer {
     const activeNote = this.activeNotes.get(note);
     if (activeNote) {
       const { oscillator, gainNode } = activeNote;
+
       gainNode.gain.setValueAtTime(
         gainNode.gain.value,
         this.audioContext.currentTime
@@ -230,6 +233,13 @@ class PianoPlayer {
         0.001,
         this.audioContext.currentTime + 0.03
       );
+
+      setTimeout(() => {
+        oscillator.stop();
+        oscillator.disconnect(); // New
+        gainNode.disconnect(); // New
+      }, 35);
+
       oscillator.stop(this.audioContext.currentTime + 0.03);
       this.activeNotes.delete(note);
 
@@ -317,27 +327,25 @@ class PianoPlayer {
 
     const playNote = (note, duration) => {
       this.playNote(note);
-      setTimeout(() => this.stopNote(note), duration);
+      const stopTimeout = setTimeout(() => this.stopNote(note), duration);
+      this.scheduledNotes.push(stopTimeout); // New: track stop timeouts
     };
 
     this.currentPlayback.notes.forEach((note) => {
       const adjustedStartTime = note.startTime / this.playbackSpeed;
       const duration = (note.endTime - note.startTime) / this.playbackSpeed;
-      setTimeout(() => playNote(note.note, duration), adjustedStartTime);
+      const startTimeout = setTimeout(
+        () => playNote(note.note, duration),
+        adjustedStartTime
+      );
+      this.scheduledNotes.push(startTimeout); // New: track start timeouts
     });
 
-    // Stop playback after all notes are played
-    setTimeout(() => {
+    // Track the end timeout as well
+    const endTimeout = setTimeout(() => {
       this.stopPlayback();
     }, this.currentPlayback.duration / this.playbackSpeed);
-  }
-
-  pausePlayback() {
-    this.isPlaying = false;
-    this.elements.playBtn.disabled = false;
-    this.elements.pauseBtn.disabled = true;
-    // Clear all active notes
-    this.activeNotes.forEach((note, key) => this.stopNote(note));
+    this.scheduledNotes.push(endTimeout); // New
   }
 
   stopPlayback() {
@@ -345,8 +353,10 @@ class PianoPlayer {
     this.elements.playBtn.disabled = false;
     this.elements.pauseBtn.disabled = true;
     this.elements.playbackStatus.classList.add("hidden");
-    // Clear all active notes
-    this.activeNotes.forEach((note, key) => this.stopNote(key));
+
+    this.clearScheduledNotes();
+
+    this.activeNotes.forEach((_, note) => this.stopNote(note));
   }
 }
 
