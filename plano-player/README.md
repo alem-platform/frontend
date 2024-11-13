@@ -155,14 +155,6 @@ The application must have a polished and professional appearance:
 - No audio glitches or delays
 - Speed control of record playback
 
-## Bonus Features
-
-- Support for sustain pedal
-- Metronome functionality
-- Different instrument sounds
-- Musical notation display
-- MIDI keyboard support
-
 ## Support
 
 Start by breaking down the project into smaller components:
@@ -187,3 +179,4 @@ Contacts:
 
 - Email: kalakova@doodocs.kz
 - [GitHub](https://github.com/aidana-bk)
+- [LinkedIn](https://www.linkedin.com/in/aidana-kalakova/)
