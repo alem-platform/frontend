@@ -1,6 +1,6 @@
 # pianoplayer waterfall
 
-You can enhance your application with additional features that transform it from a basic piano interface into a comprehensive musical learning tool. These extensions build upon the core functionality while introducing more advanced browser APIs and musical concepts.
+You can enhance your application with additional features that transform it from a basic piano interface into a comprehensive musical learning tool.
 The goal of these bonus features is to create a more immersive and educational experience, helping users not just play but also learn and understand music.
 
 ## Learning Objectives
@@ -29,6 +29,30 @@ Create an engaging visual experience that helps users learn songs:
 > Web Audio technology has revolutionized how we teach music online, enabling real-time interaction that was previously only possible with native applications
 >
 > — Jussi Kalliokoski
+
+## Resources
+
+- [Web Animations API MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)
+- [RequestAnimationFrame Performance Guide](https://css-tricks.com/using-requestanimationframe/)
+- [Web Audio API Advanced Techniques](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
+- [MIDI File Parsing in JavaScript](https://github.com/mudcube/MIDI.js/)
+- [VexFlow: JavaScript Music Notation Rendering](https://github.com/0xfe/vexflow)
+- [Web Performance Optimization Techniques](https://developer.mozilla.org/en-US/docs/Web/Performance)
+- [Web Audio API Polyfill](https://github.com/chrisguttandin/standardized-audio-context)
+- [Web Animations Polyfill](https://github.com/web-animations/web-animations-js)
+- [Can I Use: Web Audio API Support](https://caniuse.com/audio-api)
+
+## General Criteria
+
+- Your HTML MUST pass [W3C HTMLvalidator](https://validator.w3.org)
+- Your CSS MUST pass [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- CSS must work on the latest versions of Chrome, Firefox, and Safari
+- JavaScript Code MUST follow a standard ESLint rule.
+- The project MUST run without errors in the console on a modern browser (e.g., Chrome, Firefox, Edge).
+- Your code MUST NOT crash or throw runtime exceptions (e.g., undefined errors, TypeError, etc.).
+- No external packages or CDN imports are allowed (other than mandatory polyfills or fonts).
+- Only vanilla HTML, CSS, and JavaScript are allowed. No external libraries or frameworks (e.g., jQuery, React, Bootstrap) are permitted unless explicitly specified.
+- If the application crashes unexpectedly during the review, you will receive a 0.
 
 ### Sustain Pedal
 

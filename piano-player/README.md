@@ -54,10 +54,15 @@ The project consists of two main modes:
 
 ## General Criteria
 
-- Your HTML MUST be valid according to the [W3C validator](https://validator.w3.org)
-- Your CSS must work on the latest versions of Chrome, Firefox, and Safari
-- Your JavaScript must be clear and well-organized
-- Your application should be fully responsive, adapting seamlessly to both desktop and mobile devices. Use media queries to adjust layout and styles based on screen size, and incorporate animations to enhance user interaction across devices.
+- Your HTML MUST pass [W3C HTMLvalidator](https://validator.w3.org)
+- Your CSS MUST pass [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- CSS must work on the latest versions of Chrome, Firefox, and Safari
+- JavaScript Code MUST follow a standard ESLint rule.
+- The project MUST run without errors in the console on a modern browser (e.g., Chrome, Firefox, Edge).
+- Your code MUST NOT crash or throw runtime exceptions (e.g., undefined errors, TypeError, etc.).
+- No external packages or CDN imports are allowed (other than mandatory polyfills or fonts).
+- Only vanilla HTML, CSS, and JavaScript are allowed. No external libraries or frameworks (e.g., jQuery, React, Bootstrap) are permitted unless explicitly specified.
+- If the application crashes unexpectedly during the review, you will receive a 0.
 
 ## Mandatory Part
 
@@ -69,7 +74,7 @@ The interactive mode allows users to play the piano in real-time.
 
 <img src="./img/piano-recording.png" alt="Piano Player Recording" width="900">
 
-Requirements:
+## Requirements
 
 - Display a piano keyboard with at least 2 octaves (24 keys)
 - Support both mouse clicks and keyboard input
@@ -127,7 +132,7 @@ The prepared mode plays back pre-recorded sequences.
 
 <img src="./img/piano-prepared.png" alt="Piano Player Prepared Mode" width="900">
 
-Requirements:
+## Requirements
 
 - Accept JSON files in the specified format
 - Provide play, pause, and stop controls
@@ -167,7 +172,7 @@ Start by breaking down the project into smaller components:
 6. Create the playback system
 7. Add visual effects and polish
 
-Test each component thoroughly before moving to the next. Use console.log() to debug timing and event issues. If you get stuck, try creating a minimal example that reproduces the problem.
+Test each component thoroughly before moving to the next. Use `console.log()` to debug timing and event issues. If you get stuck, try creating a minimal example that reproduces the problem.
 
 ## Author
 
