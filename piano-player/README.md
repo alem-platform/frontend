@@ -74,7 +74,7 @@ The interactive mode allows users to play the piano in real-time.
 
 <img src="./img/piano-recording.png" alt="Piano Player Recording" width="900">
 
-## Requirements
+**Requirements**
 
 - Display a piano keyboard with at least 2 octaves (24 keys)
 - Support both mouse clicks and keyboard input
@@ -132,7 +132,7 @@ The prepared mode plays back pre-recorded sequences.
 
 <img src="./img/piano-prepared.png" alt="Piano Player Prepared Mode" width="900">
 
-## Requirements
+**Requirements**
 
 - Accept JSON files in the specified format
 - Provide play, pause, and stop controls
