@@ -51,10 +51,15 @@ Learning to manipulate the browser and its [DOM](https://developer.mozilla.org/r
 
 ## General Criteria
 
-- Your program MUST be able to compile successfully.
-- Your application MUST not throw errors in the browser console.  If not, you will be graded `0` automatically.
-- Third party libraries aren't allowed. You MUST use only standard browser API's. If not, you will get `0` grade.
-- The project MUST run by opening `index.html` in the browser.
+- Your HTML MUST pass [W3C HTMLvalidator](https://validator.w3.org)
+- Your CSS MUST pass [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- CSS must work on the latest versions of Chrome, Firefox, and Safari
+- JavaScript Code MUST follow a standard ESLint rule.
+- The project MUST run without errors in the console on a modern browser (e.g., Chrome, Firefox, Edge).
+- Your code MUST NOT crash or throw runtime exceptions (e.g., undefined errors, TypeError, etc.).
+- No external packages or CDN imports are allowed (other than mandatory polyfills or fonts).
+- Only vanilla HTML, CSS, and JavaScript are allowed. No external libraries or frameworks (e.g., jQuery, React, Bootstrap) are permitted unless explicitly specified.
+- If the application crashes unexpectedly during the review, you will receive a 0.
 
 ## Mandatory Part
 
