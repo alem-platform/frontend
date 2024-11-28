@@ -1,15 +1,15 @@
 # Online Tic Tac Toe
 
-Вход в лобби с определенным nickname
-
-Базовый GET, POST, PUT, PATCH, WebSocket
+### Работа с технологиями
 
 - RESTfull API
 - CORS
-- Long Pulling
+- Long Polling
 - Web Socket
 
-Флоу:
+### Базовая идея проекта
+
+Флоу пользователя:
 
 1. Пользователь в первые заходит на сайт видит что нужно вводить nickname (Создается сессия)
 2. На странице лобби, есть возможность
