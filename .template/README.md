@@ -65,6 +65,7 @@ PROJECT CONTEXT HERE.
 - The project MUST run without errors in the `console` on a modern browser.
 - If the application crashes unexpectedly during the review, you will receive a `0`.
 - `JavaScript` code must follow a standard [`ESLint rule`](https://eslint.org/docs/latest/use/getting-started).
+- If any linter errors or warnings are presented, you will receive a 0.
 - Init or configure `package.json` to run the following command and apply the linter to all `.js` and `.ts`files:
 
 ```sh
