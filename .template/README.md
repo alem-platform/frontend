@@ -76,7 +76,7 @@ PROJECT CONTEXT HERE.
 }
 ```
 
-- If any linter errors or warnings are presented, you will receive a 0.
+- If any linter errors or warnings are presented, you will receive a `0`.
 - Init or configure `package.json` to run the following command and apply the linter to all `.js` and `.ts`files:
 
 ```sh
