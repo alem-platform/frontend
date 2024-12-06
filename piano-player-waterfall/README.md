@@ -44,15 +44,33 @@ Create an engaging visual experience that helps users learn songs:
 
 ## General Criteria
 
-- Your HTML MUST pass [W3C HTMLvalidator](https://validator.w3.org)
-- Your CSS MUST pass [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
-- CSS must work on the latest versions of Chrome, Firefox, and Safari
-- JavaScript Code MUST follow a standard ESLint rule.
-- The project MUST run without errors in the console on a modern browser (e.g., Chrome, Firefox, Edge).
-- Your code MUST NOT crash or throw runtime exceptions (e.g., undefined errors, TypeError, etc.).
-- No external packages or CDN imports are allowed (other than mandatory polyfills or fonts).
-- Only vanilla HTML, CSS, and JavaScript are allowed. No external libraries or frameworks (e.g., jQuery, React, Bootstrap) are permitted unless explicitly specified.
-- If the application crashes unexpectedly during the review, you will receive a 0.
+<!--
+    Tip: general criteria here
+    You MUST change this points to align with your project.
+-->
+
+- No external packages or CDN imports are allowed. If not, you will get `0` grade.
+- Only vanilla `HTML`, `CSS`, and `JavaScript` are allowed. No external libraries or frameworks (e.g., `jQuery`, `React`) are permitted unless explicitly specified. If not, you will get `0` grade.
+- The project MUST run without errors in the `console` on a modern browser.
+- If the application crashes unexpectedly during the review, you will receive a `0`.
+- `JavaScript` code must follow a standard [`ESLint rules`](https://eslint.org/docs/latest/use/getting-started) and the mandatory rules listed below:
+
+```sh
+{
+  "semi": "error"
+  "no-console": "error",
+  "no-unused-vars": "error",
+  "no-var": "error",
+  "no-undef": "error"
+}
+```
+
+- If any linter errors or warnings are presented, you will receive a `0`.
+- Init or configure `package.json` to run the following command and apply the linter to all `.js` and `.ts`files:
+
+```sh
+$ npm run lint
+```
 
 ### Sustain Pedal
 
