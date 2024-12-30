@@ -1,3 +1,5 @@
+# Online Tic Tac Toe Features
+
 ### Просмотр историй сыгранных игр
 
 ### Просмотр Идущей игры
@@ -15,9 +17,10 @@
 
 > В случае если у обеих игроков одинаковый символ, игра рандомно присваивает игроков.
 
-### Уровни
+### Уровни/Рейтинг
 
 - За каждую победу, игрок повышает уровень. При повышении уровней появляется доступ к определенным скинам для `X` и `O`.
+- В игре, на ход дается определенное время, в случае если пользователь не успевает делать ход в течении этого времени, он автоматически проигрывает.
 
 В игре начинают отображаться скины.
 
@@ -29,9 +32,14 @@
 > - Сохраняется старый функционал:
 >   - (наблюдение за игрой)
 
-### Contacts
+## Author
 
-- [kappassov@doodocs.kz](mailto:kappassov@doodocs.kz)
-- [GitHub](https://github.com/Dias1c)
+This project has been created by:
+
+Dias Kappassov, FrontEnd Developer at Doodocs.kz
+
+Contacts:
+
 - [LinkedIn](https://linkedin.com/in/diaskappassov)
-- [Bento](https://bento.me/diaskappassov)
+- [GitHub](https://github.com/Dias1c)
+- Email: [kappassov@doodocs.kz](mailto:kappassov@doodocs.kz)
