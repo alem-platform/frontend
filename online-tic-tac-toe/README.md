@@ -49,6 +49,17 @@ You'll work with both **frontend** and **backend** technologies, learning how th
 - If the application crashes unexpectedly during the review, you will receive a `0`.
 - The project runs without errors in the console on a modern browser.
 - The pages do not contain errors according to [W3C Validator](https://validator.w3.org/).
+- Code must follow a standard `ESLint` rules and the mandatory rules listed below:
+
+```json
+{
+  "semi": "error",
+  "no-console": "error",
+  "no-unused-vars": "error",
+  "no-var": "error",
+  "no-undef": "error"
+}
+```
 
 ## Mandatory Part
 
@@ -150,3 +161,7 @@ Contacts:
 - [LinkedIn](https://linkedin.com/in/diaskappassov)
 - [GitHub](https://github.com/Dias1c)
 - Email: [kappassov@doodocs.kz](mailto:kappassov@doodocs.kz)
+
+```
+
+```
