@@ -1,9 +1,10 @@
 # online-tic-tac-toe
 
+<!--
 ## Prerequisies
-
 - [FrontEnd](https://en.wikipedia.org/wiki/Front-end_web_development)
 - [BackEnd](https://en.wikipedia.org/wiki/Frontend_and_backend#Backend_focused)
+-->
 
 ## Learning Objectives
 
@@ -42,11 +43,12 @@ You'll work with both **frontend** and **backend** technologies, learning how th
 
 ## General Criteria
 
+- The project is a web application.
 - The project written in one repository.
-- Clear README with project setup instructions and environment requirements.
+- Clear `README` with project setup instructions and environment requirements.
 - If the application crashes unexpectedly during the review, you will receive a `0`.
-- The project MUST run without errors in the console on a modern browser.
-- Pages validated without errors according to the [W3C Validator](https://validator.w3.org/)
+- The project runs without errors in the console on a modern browser.
+- The pages do not contain errors according to [W3C Validator](https://validator.w3.org/).
 
 ## Mandatory Part
 
@@ -122,6 +124,8 @@ The following describes the flow of the local offline game mode.
 
 ## Guidelines from Author
 
+### Use different methods of `HTTP`
+
 For this project implementation, I recommend utilizing different types of HTTP requests and communication methods:
 
 - Use `Long Polling` for features like displaying online players and game statistics
@@ -130,6 +134,10 @@ For this project implementation, I recommend utilizing different types of HTTP r
 - For observer mode use `SSE` (For the future)
 
 The choice of specific methods for each feature is up to you, but try to gain experience with different communication approaches throughout the project.
+
+### Teamwork
+
+You can write the back and front yourself, but I recommend that in this project it be divided into 2 people (1 back, 1 front). This split allows each developer to focus on their strengths while learning valuable team collaboration skills.
 
 ## Author
 
