@@ -160,7 +160,3 @@ Contacts:
 - [LinkedIn](https://linkedin.com/in/diaskappassov)
 - [GitHub](https://github.com/Dias1c)
 - Email: [kappassov@doodocs.kz](mailto:kappassov@doodocs.kz)
-
-```
-
-```
