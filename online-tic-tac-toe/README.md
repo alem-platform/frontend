@@ -54,7 +54,6 @@ You'll work with both **frontend** and **backend** technologies, learning how th
 ```json
 {
   "semi": "error",
-  "no-console": "error",
   "no-unused-vars": "error",
   "no-var": "error",
   "no-undef": "error"
