@@ -2,7 +2,7 @@
     Tip: project name here
 -->
 
-# Module-base
+# Landing. Part-1: Fixed Layout
 
 ## Learning Objectives
 
@@ -66,9 +66,9 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 - [CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [BEM Methodology](https://en.bem.info/methodology/)
-- [Google DevTools Guide](https://developer.chrome.com/docs/devtools?hl=ru)
-- [Pixel-perfect](https://htmlacademy.ru/blog/css/pixel-perfect)
+- [Google DevTools Guide](https://developer.chrome.com/docs/devtools?hl=en)
 - [Figma for Developers](https://dev.to/codewithshahan/why-is-figma-better-for-developers-hil)
+- [Pixel Perfect Pro](https://chromewebstore.google.com/detail/pixel-perfect-pro/nnhifpoojdlddpnhjbhiagddgckpmpfb)
 
 ## General Criteria
 
@@ -81,9 +81,8 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 - You can use normalize.css to ensure consistent styling across browsers.
 - You cannot use any other external CSS libraries or preprocessors (e.g., Bootstrap, Tailwind, Pug, SCSS, or LESS).
 - The project must be written in vanilla HTML and CSS.
-- Ensure pixel-perfect implementation based on provided design specifications.
+- Ensure pixel-perfect implementation based on provided design.
 - The project must run without errors in the console on a modern browser.
-- Code should be clean, well-commented, and follow best practices.
 - Ensure cross-browser compatibility.
 - The website must pass the [W3C HTML](https://validator.w3.org/) & [CSS validator](http://jigsaw.w3.org/css-validator/).
 
@@ -105,16 +104,6 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 - Use pseudo-elements (`::before, ::after`) and pseudo-classes (`:hover, :active, :nth-child`) to enhance styling.
 - Achieve a pixel-perfect match with the provided design.
 
-## Support
-
-<!--
-    Tip: leave this section unchanged.
-    This is a static text, which student must read in every project.
--->
-
-If you get stuck, try debugging your code using DevTools and re-read the project requirements. 
-If you are still stuck, ask a friend for help or take a break and come back later.
-
 ## Guidelines from Author
 
 <!--
@@ -123,12 +112,11 @@ If you are still stuck, ask a friend for help or take a break and come back late
     If no guidelines provided whole section can be removed.
 -->
 
-- Pay attention to details and spacing.
-- Use DevTools to inspect and adjust elements.
-- Keep your CSS structured and organized.
-- Avoid unnecessary `div` elements and keep your HTML semantic.
 - Use [emmett](https://medium.com/front-end-weekly/faster-html-css-coding-with-emmet-80a66db7ba66) to speed up writing your code in vscode.
+- Pay attention to details and spacing.
+- Use [DevTools](https://developer.chrome.com/docs/devtools?hl=ru) to inspect and adjust elements.
 - If you don't understand how [grids](https://cssgridgarden.com/#eng) and [flexboxes](https://flexboxfroggy.com/#eng) work, play the games.
+- Courses [HTML, Web.dev](https://web.dev/learn/html/), [HTML, code-basics](https://code-basics.com/languages/html), [CSS, code-basics](https://code-basics.com/languages/css)
 
 ## Author
 
