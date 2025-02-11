@@ -31,7 +31,7 @@
 In this project, you will create a structured web page using HTML and CSS, applying best practices in layout, styling, and accessibility. You will:
 
 - Build a simple webpage using semantic HTML.
-- Style the page using CSS, including layouts with Grid and Flexbox.
+- Style the page using CSS, including layouts with Grid or Flexbox.
 - Understand and use block and inline elements correctly.
 - Work with different positioning techniques.
 - Apply BEM methodology for organized styling.
