@@ -2,7 +2,16 @@
 ### Does the HTML pass W3C validation without errors??
 - [ ] Yes
 - [ ] No
+### Is there a meta charset="UTF-8" declaration in the <head> section?
+- [ ] Yes
+- [ ] No
+### Does the page include a proper title and meta description for SEO?
+- [ ] Yes
+- [ ] No
 ### Are all HTML tags used semantically correctly (e.g., `<header>, <footer>, <section>, <article>`)?
+- [ ] Yes
+- [ ] No
+### Are headings (<h1> to <h6>) used in the correct hierarchical order?
 - [ ] Yes
 - [ ] No
 ### Do all `img` have the required `alt` attribute?
@@ -47,6 +56,12 @@
 - [ ] Yes
 - [ ] No
 ### Does clicking on the address open a map with the location shown (e.g., Google Maps)?
+- [ ] Yes
+- [ ] No
+### Are font sizes and spacing consistent across the design?
+- [ ] Yes
+- [ ] No
+### Does the site avoid using any unnecessary libraries or preprocessors (e.g., Bootstrap, Tailwind, Pug, SCSS, or LESS)?
 - [ ] Yes
 - [ ] No
 
