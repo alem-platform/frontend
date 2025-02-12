@@ -13,13 +13,13 @@ The project consists of three key parts:
 - You need to create the main page and the "Projects" page based on the provided design. The layout should display correctly at screen width of 1440px.
 - The work will be evaluated for validity and compliance with the design using pixel-perfect principles.
 
-### [p2 - Responsive & Theming](./m2/README.md)
+### [m2 - Responsive & Theming](./m2/README.md)
 
 - In this stage, you need to make the pages created in the first phase responsive, ensuring proper display down to a minimum width of 380px.
 - All repeated styles must be extracted into CSS variables. Additionally, the light/dark theme switch should be implemented using CSS.
 - The work will be evaluated for validity, pixel-perfect alignment with the layout at the specified page width, responsiveness, and the absence of horizontal scrolling.
 
-### [p3 - Interactivity](./m3/README.md)
+### [m3 - Interactivity](./m3/README.md)
 
 - In this stage, you need to enhance the website with interactive elements using JavaScript.
 
