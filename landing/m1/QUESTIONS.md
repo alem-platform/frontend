@@ -110,6 +110,4 @@
 
 ## Detailed Feedback
 
-### What was great? What did you like the most about the program and the team performance?
-
 ### What could be better? How those improvements could positively impact the outcome?
