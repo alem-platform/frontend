@@ -30,7 +30,7 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 
 ## Mandatory Part
 
-You need to create Main and Projects pages according to the [Design in Figma](TODO) (only `Main w1440` and `Projects w1440`).
+You need to create Main and Projects pages according to the [Design in Figma](#TODO) (only `Main w1440` and `Projects w1440`).
 
 - Achieve a pixel-perfect match with the provided design.
 
