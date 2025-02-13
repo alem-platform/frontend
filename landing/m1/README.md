@@ -3,13 +3,13 @@
 ## Learning Objectives
 
 - HTML fundamentals
+  - Semantic HTML
 - CSS fundamentals
+  - Grid & Flexbox for layout structuring
+  - Block, inline, and inline-block elements
+  - Positioning
+  - Pseudo-elements & pseudo-classes
 - Chrome DevTools
-- Grid & Flexbox for layout structuring
-- Block, inline, and inline-block elements
-- Positioning in CSS
-- Semantic HTML
-- Pseudo-elements & pseudo-classes
 
 ## Abstract
 
