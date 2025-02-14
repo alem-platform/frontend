@@ -21,7 +21,6 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 
 ## General Criteria
 
-- Use semantic HTML.
 - The project must be written in vanilla HTML and CSS.
 - You cannot use any other external CSS libraries or preprocessors (e.g., Bootstrap, Tailwind, Pug, SCSS, or LESS).
 - The project must run without errors in the console on a modern browser.
