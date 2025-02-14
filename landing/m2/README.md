@@ -1,130 +1,117 @@
-<!--
-    Tip: project name here
--->
-
-# Landing. Module-2: Responsive & Theming
+# landing-m2: Responsive & Theming
 
 ## Learning Objectives
 
-<!--
-    Tip: here you must be a list of learning objectives
-    that cover your project
--->
-
-- Responsive design techniques (fluid and adaptive layouts)
-- Using CSS variables for repeating styles
-- Implementing dark and light themes using CSS
-- Keyframe animations in CSS
-- Optimizing layouts for different screen sizes
-- Pixel-perfect implementation for mobile
-- Media query research
+- CSS Media Queries
+- CSS Variables
+- Themes using CSS
+- Adaptive and Responsive Design using CSS
 
 ## Abstract
 
-<!--
-    Tip: Write a short description of what student
-    will do during this project.
--->
-
-In this project, you will enhance the static web page from Part 1 by making it fully responsive and implementing theme switching. You will:
-
-- Optimize the current CSS by using CSS variables to replace repeated values such as colors, border-radius, and font sizes, etc.
-- Ensure a smooth transition between screen sizes with a responsive and adaptive layout.
-- Create a pixel-perfect mobile version of the design.
-- Implement dark and light themes using only CSS.
+In this project, you will enhance the static web page from Part 1 by making it responsive and implementing theme switching.
 
 ## Context
 
-<!-- Tip: citation is optional -->
-
-> Responsive design is not about making things fit on a screen, but rather about making the experience better for every user.
->
-> —  Ethan Marcotte
-
-<!--
-    Tip: project context here
-    Project context is like an onboarding that should explain briefly
-    project problem.
-
-    Think of it like ADR's context section which describes problem.
--->
-
-Modern web development requires responsive and adaptive layouts. In this module, you will work with advanced CSS techniques to ensure a website looks great across all devices while keeping the code clean and maintainable.
-
-## Resources
-
-<!-- Tip: useful resources here -->
-
-- [MDN Web Docs - Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
-- [FreeCodeCamp - Using CSS Variables](https://www.freecodecamp.org/news/everything-you-need-to-know-about-css-variables-c74d922ea855)
-- [CSS Tricks - Dark Mode in CSS](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
-- [Dev - Dark mode only CSS](https://dev.to/laurilllll/how-to-create-dark-mode-using-only-css-2cb4)
-- [Google DevTools Guide](https://developer.chrome.com/docs/devtools?hl=en)
-- [CSS Tricks - Keyframe Animations](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
-- [Can I use - Browser Compatibility](https://caniuse.com/)
+In today's digital landscape, websites must be accessible and visually appealing across a wide range of devices, from desktops to smartphones. Responsive design ensures that your website adapts seamlessly to different screen sizes, providing an optimal user experience. Additionally, theme switching allows users to personalize their experience, such as choosing between light and dark modes, which is increasingly expected in modern web applications.
 
 ## General Criteria
 
-<!--
-    Tip: general criteria here
-    You MUST change this points to align with your project.
--->
-
-- The previous criteria from Part-1 still apply.
-- All repetitive styles (colors, border-radius, font sizes) must be replaced with CSS variables.
-- The website must be fluid and adapt smoothly when resizing in DevTools.
-- A pixel-perfect design should be implemented specifically for mobile devices.
-- Dark and light themes should be implemented using CSS variables and `prefers-color-scheme`.
-- Use `@media` queries to handle different breakpoints.
-- Implement at least one CSS animation using @keyframes.
+- The project must be written in vanilla HTML and CSS.
+- You cannot use any other external CSS libraries or preprocessors (e.g., Bootstrap, Tailwind, Pug, SCSS, or LESS).
+- The project must run without errors in the console on a modern browser.
+- Ensure cross-browser compatibility.
 - The website must pass the [W3C HTML](https://validator.w3.org/) & [CSS validator](http://jigsaw.w3.org/css-validator/).
+- A pixel-perfect design should be implemented.
 
 ## Mandatory Part
 
-<!--
-    Tip: write here what student should do
+### Responsive Design
 
-    Provide project description
-    Provide examples
-    Provide requirements
--->
-### Task List:
-- Extract all repetitive styles for colors, typography, and spacing into CSS variables.
-- Ensure smooth transitions between different viewport widths.
-- Develop a pixel-perfect mobile version based on the provided design.
-- Implement dark and light themes using only CSS.
-- Add a smooth transition effect when switching themes.
-- Create at least one CSS animation using `@keyframes`.
+You need to enhance the Main and Projects pages from Part 1 to be fully responsive.
 
-## Guidelines from Author
+- [Figma design](#TODO)
 
-<!--
-    Tip: this section is optional.
-    In case if you want to give some guidelines, write it here.
-    If no guidelines provided whole section can be removed.
--->
+The design should adapt to different screen sizes, including:
 
-- Use [emmett](https://medium.com/front-end-weekly/faster-html-css-coding-with-emmet-80a66db7ba66) to speed up writing your code in vscode.
-- Pay attention to details and spacing.
-- Use [DevTools](https://developer.chrome.com/docs/devtools?hl=ru) to inspect and adjust elements.
-- Test on different screen resolutions to ensure adaptability.
+1. **Desktop (1440px and above)**:
 
-## Author
+   - The design should match the original Figma design for `1440px`.
 
-This project has been created by:
+2. **Intermediate Screens (600px - 1439px)**:
 
-<!-- Tip: type here author's name, position and company -->
-<!-- John Doe, DevOps at Google -->
+   - Since there is no specific design for screens between `1439px` and `600px`, the layout should fluidly adapt to these screen sizes.
+   - Use CSS Grid, Flexbox, and media queries to ensure the content rearranges itself logically and remains usable.
+   - Focus on maintaining readability, proper spacing, and usability without strict adherence to a specific design.
 
+3. **Mobile (375px - 599px)**:
+   - The design should match the provided Figma design for `375px`.
+   - Optimize the layout for touch interactions, vertical scrolling, and smaller screens.
+   - Ensure all interactive elements (e.g., buttons, links) are easily tappable.
 
-Vitaliy Tarassov, alumni of Alem School
+#### Breakpoints
 
-Contacts:
+- **Mobile**: 375px - 599px
+- **Intermediate**: 600px - 1439px
+- **Desktop**: 1440px and above
 
-<!--
-    Tip: list of contacts to reach the author.
-    It can be email, linkedin, telegram, instagram, etc.
--->
+### Theming
 
-- [GitHub](https://github.com/vtarasso/)
-- [Telegram: @vitnat1](https://t.me/vitnat1)
+Implement a theme switching feature that allows users to toggle between light and dark themes. The theme should be applied consistently across all pages and should include:
+
+- **Light Theme**: Default theme with light background and dark text.
+- **Dark Theme**: Alternative theme with dark background and light text.
+
+#### Theme Switching
+
+- Realize toggle button (e.g., a switch or button) in the header to allow users to switch between themes.
+- Realize toggle button using only HTML & CSS.
+- Use **CSS Variables** to define theme colors and apply them throughout the stylesheet.
+
+#### Example of CSS Variables for Theming
+
+```css
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+```
+
+### Additional Requirements
+
+- A pixel-perfect design should be implemented for the provided breakpoints (`1440px` and `375px`).
+- Hover effects for buttons and links are disabled on mobile devices
+- **Cross-Browser Compatibility**: Test the website on different browsers (e.g., Chrome, Firefox, Safari, Edge) to ensure consistent behavior.
+
+## Support
+
+**Before Starting**
+
+If you need to brush up on responsive design and theming, consider the following resources:
+
+- [Responsive Web Design Basics](https://web.dev/responsive-web-design-basics/)
+- [CSS Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [Dark Mode in CSS](https://css-tricks.com/dark-modes-with-css/)
+
+**DevTools will help you**
+
+Continue using Chrome DevTools to debug and test your responsive design and theming implementation.
+
+- [Google DevTools Guide](https://developer.chrome.com/docs/devtools)
+- [Inspect CSS](https://developer.chrome.com/docs/devtools/css)
+- [Emulate CSS Media type](https://developer.chrome.com/docs/devtools/rendering/emulate-css)
+
+**Method of checking your work**
+
+Use browser extensions like [Pixel Perfect](https://chromewebstore.google.com/search/Pixel%20perfect) to ensure your design matches the Figma mockups perfectly across all breakpoints.
