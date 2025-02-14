@@ -26,6 +26,7 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 - The project must run without errors in the console on a modern browser.
 - Ensure cross-browser compatibility.
 - The website must pass the [W3C HTML](https://validator.w3.org/) & [CSS validator](http://jigsaw.w3.org/css-validator/).
+- A pixel-perfect design should be implemented.
 
 ## Mandatory Part
 
