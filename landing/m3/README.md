@@ -1,143 +1,107 @@
-<!--
-    Tip: project name here
--->
-
-# Landing. Module-3: interactive features
+# landing-m3: Interactivity
 
 ## Learning Objectives
 
-<!--
-    Tip: here you must be a list of learning objectives
-    that cover your project
--->
-
 - JavaScript fundamentals
-- Event listeners and DOM manipulation
-- Implementing smooth scrolling with JavaScript
-- Working with classList (add, remove, toggle, contains)
-- Creating interactive navigation (burger menu)
-- Building a slider with autoplay functionality
-- Randomizing content display
-- Implementing a "scroll to top" button
-- Creating modal windows
+- BOM manipulations
+- DOM manipulations
+- localStorage
 
 ## Abstract
 
-<!--
-    Tip: Write a short description of what student
-    will do during this project.
--->
+In this project, you will enhance your web page by adding interactive features using pure JavaScript:
 
-In this project, you will enhance your web page by adding interactive features using pure JavaScript (no external libraries or frameworks). You will:
-
-- Implement a burger menu for mobile navigation.
-- Create smooth scrolling for anchor links using JavaScript.
-- Develop an automatic slider for the testimonials section.
-- Randomly display three projects on the homepage.
-- Add a "scroll to top" button.
-- Implement a modal window for additional information display.
+- Burger Menu
+- "Scroll to top" button (smooth scrolling, display on)
+- Slider
+- Random "Projects" block
+- Accordion for FAQ
+- Saved "theme"
+<!-- - Modal Window (TODO) -->
 
 ## Context
 
-<!-- Tip: citation is optional -->
+While HTML provides the structure and CSS handles the presentation, JavaScript was created to enable functionality that goes beyond static content and styles. It bridges the gap between the user and the webpage by adding interactivity and dynamic behavior. Here are some examples of what JavaScript enables:
 
-> JavaScript is the duct tape of the Internet.
->
-> —  Charlie Campbell
+- **Dynamic Content Updates**: For instance, updating a shopping cart total without refreshing the page or displaying live notifications.
+- **User Interaction Handling**: Responding to complex user actions like drag-and-drop, multi-step forms, or real-time input validation.
+- **State Management**: Remembering user preferences, such as a selected theme or language, even after the browser is closed and reopened.
+- **Asynchronous Operations**: Fetching data from a server (e.g., loading new posts on a social media feed) without interrupting the user experience.
+- **Advanced Animations**: Creating animations that depend on user input or complex logic, such as interactive games or custom scroll effects.
+- **Browser API Integration**: Accessing device features like geolocation, camera, or microphone to create richer experiences.
 
-<!--
-    Tip: project context here
-    Project context is like an onboarding that should explain briefly
-    project problem.
-
-    Think of it like ADR's context section which describes problem.
--->
-
-Interactivity is a crucial aspect of modern web development. This module focuses on utilizing vanilla JavaScript to enhance user experience without relying on external libraries.
-
-## Resources
-
-<!-- Tip: useful resources here -->
-
-- [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [JavaScript DOM](https://www.javascripttutorial.net/javascript-dom/)
-- [JavaScript Event Listeners](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events)
-- [Generate random elements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-- [Working with classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+JavaScript is the backbone of modern web applications, enabling features that make websites feel alive and responsive to user needs.
 
 ## General Criteria
 
-<!--
-    Tip: general criteria here
-    You MUST change this points to align with your project.
--->
-
-- The previous criteria from Part-1 and Part-2 still apply.
-- Only vanilla JavaScript is allowed. No external libraries or plugins (e.g., jQuery, GSAP, Swiper, Bootstrap, etc.).
-- Code must be well-structured, modular, and follow [JavaScript best practices](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript).
-- Burger menu, up button, automatic looping slider, modal window should be implemented
-- Event listeners should be added using `addEventListener` instead of inline event handlers.
-- The project must work correctly on all modern browsers (Chrome, Firefox, Edge, Safari) and devices.
-- Everything should run smoothly.
-- When clicking outside the modal window, the window should close also when pressing the ESC key.
-- The site should not scroll when opening a burger menu or modal window.
-- On the main page in the part about projects, 3 projects should appear randomly, not repeating (there should not be two or three identical ones).
-- Slider should be automatic, smooth scrolling and looped.
-- The slider should have a working swipe, scrolling automatically stops when you hover or swipe.
-- The slider should also change when you click on pagination.
-- The top-button appears only under certain conditions (for example, the user has scrolled halfway down the page).
-- The top-button should smoothly raise the page of the site to the top and smoothly disappear
+- The project must be written in vanilla HTML and CSS.
+- You cannot use any other external CSS libraries or preprocessors (e.g., Bootstrap, Tailwind, Pug, SCSS, or LESS).
+- The project must run without errors in the console on a modern browser.
+- Ensure cross-browser compatibility.
 - The website must pass the [W3C HTML](https://validator.w3.org/) & [CSS validator](http://jigsaw.w3.org/css-validator/).
+- A pixel-perfect design should be implemented.
 
 ## Mandatory Part
 
-<!--
-    Tip: write here what student should do
+You need to enhance the Main and Projects pages from previous parts (`Part 1` & `Part 2`) to be fully interactive.
 
-    Provide project description
-    Provide examples
-    Provide requirements
--->
-### Task List:
-- Implement a burger menu that opens and closes the navigation on mobile devices.
-- Add smooth scrolling for anchor links using JavaScript (instead of CSS).
-- Develop a testimonials slider that auto-scrolls unless interacted with by the user.
-- Randomly display three projects from a larger set every time the main page loads.
-- Implement a scroll to top button that smoothly takes users back to the top of the page.
-- Create a modal window that opens and closes based on user actions.
-- Ensure all interactive elements work correctly across different screen sizes and devices.
+- [Figma design](#TODO)
 
-## Guidelines from Author
+### Burger Menu
 
-<!--
-    Tip: this section is optional.
-    In case if you want to give some guidelines, write it here.
-    If no guidelines provided whole section can be removed.
--->
+Implement a responsive burger menu for mobile screens (`599px` and less).
 
-- Use [emmett](https://medium.com/front-end-weekly/faster-html-css-coding-with-emmet-80a66db7ba66) to speed up writing your code in vscode.
-- Avoid inline event handlers (e.g., `onclick="function()"`), use `addEventListener` instead.
-- Use [DevTools](https://developer.chrome.com/docs/devtools?hl=ru) to inspect and adjust elements.
-- Test on different screen resolutions to ensure adaptability.
-- [You Don't Know JS (Book Series)](https://github.com/getify/You-Dont-Know-JS)
-- [JavaScript.info](https://javascript.info/)
+- The menu should toggle visibility when the burger icon is clicked.
+- Ensure smooth transitions for the menu appearance and disappearance.
+- The menu should include all navigation links and be fully functional.
+- When you click any button in the burger menu, the menu must close.
+- When changing the viewport width, the open burger menu should close.
 
-## Author
+### "Scroll to Top" Button
 
-This project has been created by:
+- Add a "Scroll to Top" button that appears when the user has scrolled `300px` from the top of the page.
+- The button should smoothly scroll the page to the top when clicked.
+- Ensure smooth transitions between slides and avoid abrupt jumps or glitches.
 
-<!-- Tip: type here author's name, position and company -->
-<!-- John Doe, DevOps at Google -->
+### Slider
 
+Implement a slider component for showcasing content.
 
-Vitaliy Tarassov, alumni of Alem School
+- The slider should include navigation controls (navigation dots).
+- The slider should automatically switch to the next slide every 3 seconds.
+- Automatic switching should pause when the user interacts with the slider (hovers over the slider, or touches and holds the slide content on touch devices). Once the user has finished interacting with the slider, the slider resumes its work.
 
-Contacts:
+### Random "Projects" Block
 
-<!--
-    Tip: list of contacts to reach the author.
-    It can be email, linkedin, telegram, instagram, etc.
--->
+Update a "Projects" section where projects are displayed in a random order each time the page is loaded or refreshed.
 
-- [GitHub](https://github.com/vtarasso/)
-- [Telegram: @vitnat1](https://t.me/vitnat1)
+### Accordion for FAQ
+
+Implement an accordion component for the FAQ section.
+
+- Each accordion item should expand/collapse when clicked.
+
+### Saved "Theme"
+
+Extend the theme switching functionality from Part 2 to save the user's theme preference.
+
+- Ensure the user selected theme is applied automatically when the user revisits the website.
+
+## Support
+
+**Before Starting**
+
+If you need to brush up on JavaScript fundamentals and DOM manipulation, consider the following resources:
+
+- [DOM Manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Event Handling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [CSS Transitions and Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+
+**DevTools will help you**
+
+Use Chrome DevTools to debug and test your JavaScript code and interactive features:
+
+- [Debugging JavaScript](https://developer.chrome.com/docs/devtools/javascript/)
+- [Inspect and Modify the DOM](https://developer.chrome.com/docs/devtools/dom/)
+- [Test Responsive Design](https://developer.chrome.com/docs/devtools/device-mode/)
