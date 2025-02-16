@@ -78,6 +78,13 @@
 - [ ] Yes
 - [ ] No
 
+## Project Card
+
+### Are project durations displayed in the required format? (Days, Weeks, Months)?
+
+- [ ] Yes
+- [ ] No
+
 ## Random "Projects" block
 
 ### Does the "Projects" section display 3 projects randomly each time the page is loaded or refreshed?

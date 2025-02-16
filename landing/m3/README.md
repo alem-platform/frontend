@@ -76,6 +76,16 @@ Implement a slider component for showcasing content.
 
 Update a "Projects" section where 3 projects are displayed randomly each time the page is loaded or refreshed.
 
+> Use `projects.json` from [landing Assets](./../assets)
+
+### Project Card
+
+Each project card must display the project the project duration. The duration should be displayed in a user-friendly format:
+
+- **Days**: If the project lasted less than a week (but more than one day), display the duration in days (e.g., `"3 days"`).
+- **Weeks**: If the project lasted more than a week but less than a month, display the duration in weeks (e.g., `"2 weeks"`).
+- **Months**: If the project lasted more than a month, display the duration in months (e.g., `"5 months"`).
+
 ### Filter in "Projects" page
 
 Implement the filter to dynamically update the displayed projects.
@@ -83,6 +93,8 @@ Implement the filter to dynamically update the displayed projects.
 - All - display all projects
 - Websites - displays only projects with Website tag
 - Applications - displays only projects with Application tag
+
+> Use `projects.json` from [landing Assets](./../assets)
 
 ### Accordion for FAQ
 
