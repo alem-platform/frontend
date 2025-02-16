@@ -14,17 +14,17 @@
 
 ## Are media queries implemented correctly for the following breakpoints?
 
-### Mobile (375px - 599px)
+### Mobile (`375px` - `599px`)
 
 - [ ] Yes
 - [ ] No
 
-### Intermediate Screens (600px - 1439px)
+### Intermediate Screens (`600px` - `1439px`)
 
 - [ ] Yes
 - [ ] No
 
-### Desktop (1440px and above)
+### Desktop (`1440px` and above)
 
 - [ ] Yes
 - [ ] No
@@ -34,12 +34,17 @@
 - [ ] Yes
 - [ ] No
 
-### Is the design pixel-perfect for the provided breakpoints `1440px`?
+### Is the design pixel-perfect for the breakpoint `1440px`?
 
 - [ ] Yes
 - [ ] No
 
-### Is the design pixel-perfect for the provided breakpoints `375px`?
+### Is the design pixel-perfect for the breakpoint `375px`?
+
+- [ ] Yes
+- [ ] No
+
+### Is the header navigation buttons hidden and burger visible for the breakpoint `599px` and less?
 
 - [ ] Yes
 - [ ] No
