@@ -14,9 +14,10 @@ In this project, you will enhance your web page by adding interactive features u
 - Burger Menu
 - "Scroll to top" button (smooth scrolling, display on)
 - Slider
-- Random "Projects" block
 - Accordion for FAQ
 - Saved "theme"
+- Random "Projects" block
+- Filter for "Projects"
 <!-- - Modal Window (TODO) -->
 
 ## Context
@@ -71,9 +72,17 @@ Implement a slider component for showcasing content.
 - The slider should automatically switch to the next slide every 3 seconds.
 - Automatic switching should pause when the user interacts with the slider (hovers over the slider, or touches and holds the slide content on touch devices). Once the user has finished interacting with the slider, the slider resumes its work.
 
-### Random "Projects" Block
+### Random "Projects" block
 
-Update a "Projects" section where projects are displayed in a random order each time the page is loaded or refreshed.
+Update a "Projects" section where 3 projects are displayed randomly each time the page is loaded or refreshed.
+
+### Filter in "Projects" page
+
+Implement the filter to dynamically update the displayed projects.
+
+- All - display all projects
+- Websites - displays only projects with Website tag
+- Applications - displays only projects with Application tag
 
 ### Accordion for FAQ
 
