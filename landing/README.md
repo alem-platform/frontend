@@ -4,7 +4,7 @@
 
 This project focuses on developing a modern, responsive, and interactive landing page.
 
-- [Figma Design](https://www.figma.com/design/LjSY8wCfM7vOkzNEhngnOL/Alem-Project-Landing)
+- [Figma Design](https://www.figma.com/design/3Pi8gnNDhNHt2HzcpqM1hs/)
 
 The project consists of three key parts:
 
