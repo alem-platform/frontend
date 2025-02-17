@@ -115,3 +115,7 @@ Continue using Chrome DevTools to debug and test your responsive design and them
 **Method of checking your work**
 
 Use browser extensions like [Pixel Perfect](https://chromewebstore.google.com/search/Pixel%20perfect) to ensure your design matches the Figma mockups perfectly across all breakpoints.
+
+## Suggestions
+
+If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)

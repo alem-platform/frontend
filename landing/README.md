@@ -26,3 +26,7 @@ The project consists of three key parts:
 ### Summary
 
 The final product will be a well-optimized and fully functional landing page that provides a seamless experience across all devices.
+
+## Suggestions
+
+If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)

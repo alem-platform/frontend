@@ -126,3 +126,7 @@ Use Chrome DevTools to debug and test your JavaScript code and interactive featu
 - [Debugging JavaScript](https://developer.chrome.com/docs/devtools/javascript/)
 - [Inspect and Modify the DOM](https://developer.chrome.com/docs/devtools/dom/)
 - [Test Responsive Design](https://developer.chrome.com/docs/devtools/device-mode/)
+
+## Suggestions
+
+If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)

@@ -129,3 +129,7 @@ To keep your CSS clean and maintainable, consider using BEM (Block, Element, Mod
 **Method of checking your work**
 
 To ensure your work matches the design perfectly, use the browser extensions. For example [Pixel Perfect extension](https://chromewebstore.google.com/search/Pixel%20perfect)
+
+## Suggestions
+
+If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)
