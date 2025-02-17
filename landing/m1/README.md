@@ -132,4 +132,4 @@ To ensure your work matches the design perfectly, use the browser extensions. Fo
 
 ## Suggestions
 
-If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)
+Have ideas for improvement? Feel free to create an [issue here](https://github.com/alem-platform/frontend/issues)!
