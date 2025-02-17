@@ -1,0 +1,95 @@
+[
+  {
+    "tag": "Website",
+    "title": "Urban Ride Hub",
+    "description": "Created a bike rental site with real-time availability, routes, and membership management.",
+    "meta": {
+      "duration_days": 30,
+      "technologies": ["Angular", "Google Maps API"]
+    },
+    "created_at": "20 Apr 2022"
+  },
+  {
+    "tag": "Website",
+    "title": "Fitness Community",
+    "description": "Built a vibrant site for fitness enthusiasts with blog integration and workout plans.",
+    "meta": {
+      "duration_days": 3,
+      "technologies": ["Django"],
+      "works": ["Member Login"]
+    },
+    "created_at": "30 May 2024"
+  },
+  {
+    "tag": "Website",
+    "title": "E-commerce Revolution",
+    "description": "E-commerce Revolution: Built a dynamic store with seamless payments and recommendations.",
+    "meta": {
+      "duration_days": 20,
+      "technologies": ["Next.js", "Stripe API"]
+    },
+    "created_at": "18 Jan 2024"
+  },
+  {
+    "tag": "Application",
+    "title": "EventPlanner Pro",
+    "description": "Built an event app with RSVP tracking, calendar integration, and guest list management.",
+    "meta": {
+      "duration_days": 60,
+      "technologies": ["Flutter", "Google Calendar API"]
+    },
+    "created_at": "17 Jan 2023"
+  },
+  {
+    "tag": "Website",
+    "title": "Corporate Branding",
+    "description": "Built a professional corporate site with customized branding and real-time updates.",
+    "meta": {
+      "duration_days": 3,
+      "technologies": ["WordPress"],
+      "works": ["Multilingual Support"]
+    },
+    "created_at": "16 Aug 2022"
+  },
+  {
+    "tag": "Application",
+    "title": "EduLearn",
+    "description": "Designed an e-learning platform featuring video lessons, quizzes, and progress tracking.",
+    "meta": {
+      "duration_days": 40,
+      "technologies": ["React Native", "AWS"]
+    },
+    "created_at": "15 Jan 2025"
+  },
+  {
+    "tag": "Website",
+    "title": "Tech Startup Site",
+    "description": "Designed a modern and fast-loading website to highlight a new tech startup’s services.",
+    "meta": {
+      "duration_days": 25,
+      "technologies": ["Next.js"],
+      "works": ["SEO Optimization"]
+    },
+    "created_at": "14 Jan 2025"
+  },
+  {
+    "tag": "Application",
+    "title": "Portfolio Perfection",
+    "description": "Designed a stylish, modern portfolio to highlight creative work with elegance and efficiency.",
+    "meta": {
+      "duration_days": 43,
+      "technologies": ["Next.js", "Tailwind CSS", "GSAP"]
+    },
+    "created_at": "10 Jan 2023"
+  },
+  {
+    "tag": "Website",
+    "title": "Non-Profit Impact",
+    "description": "Launched a fundraising website with integrated donation tracking and volunteer coordination.",
+    "meta": {
+      "duration_days": 100,
+      "technologies": ["PHP", "Donation Gateway"]
+    },
+    "created_at": "12 Jule 2024"
+  }
+]
