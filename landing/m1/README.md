@@ -34,6 +34,8 @@ You need to create Main and Projects pages according to the Design in Figma (onl
 
 - [Figma Design](https://www.figma.com/design/tO4tO89psRZgHfuuf0wKg5/Alem-Project-Landing)
 
+All you need is the layout of the specified pages. This means that you are not required to implement a mobile version and interactive buttons and logic that require JS.
+
 - Achieve a pixel-perfect match with the provided design.
 
 ### Semantic
