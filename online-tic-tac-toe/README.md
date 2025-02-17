@@ -160,3 +160,6 @@ Contacts:
 - [LinkedIn](https://linkedin.com/in/diaskappassov)
 - [GitHub](https://github.com/Dias1c)
 - Email: [kappassov@doodocs.kz](mailto:kappassov@doodocs.kz)
+
+> [!TIP]
+> If you have any suggestions for improvements to this project, please create an [Issue here](https://github.com/alem-platform/frontend/issues)
