@@ -32,7 +32,7 @@ Web development starts with a strong foundation in HTML and CSS. Understanding h
 
 You need to create Main and Projects pages according to the Design in Figma (only `Main w1440` and `Projects w1440`).
 
-- [Figma Design](https://www.figma.com/design/LjSY8wCfM7vOkzNEhngnOL/Alem-Project-Landing?node-id=0-1&t=gFKbRhxgw4VgQBlM-1)
+- [Figma Design](https://www.figma.com/design/LjSY8wCfM7vOkzNEhngnOL/Alem-Project-Landing)
 
 All you need is the layout of the specified pages. This means that you are not required to implement a mobile version and interactive buttons and logic that require JS.
 
