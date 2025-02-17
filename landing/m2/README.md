@@ -30,7 +30,7 @@ In today's digital landscape, websites must be accessible and visually appealing
 
 You need to enhance the Main and Projects pages from Part 1 to be fully responsive.
 
-- [Figma design](https://www.figma.com/design/tO4tO89psRZgHfuuf0wKg5/Alem-Project-Landing)
+- [Figma design](https://www.figma.com/design/LjSY8wCfM7vOkzNEhngnOL/Alem-Project-Landing?node-id=0-1&t=gFKbRhxgw4VgQBlM-1)
 
 The design should adapt to different screen sizes, including:
 

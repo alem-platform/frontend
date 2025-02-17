@@ -46,7 +46,7 @@ JavaScript is the backbone of modern web applications, enabling features that ma
 
 You need to enhance the Main and Projects pages from previous parts (`Part 1` & `Part 2`) to be fully interactive.
 
-- [Figma design](https://www.figma.com/design/tO4tO89psRZgHfuuf0wKg5/Alem-Project-Landing)
+- [Figma design](https://www.figma.com/design/LjSY8wCfM7vOkzNEhngnOL/Alem-Project-Landing?node-id=0-1&t=gFKbRhxgw4VgQBlM-1)
 
 ### Burger Menu
 
