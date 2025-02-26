@@ -15,25 +15,27 @@
 - [ ] Yes
 - [ ] No
 
-### ESLint Configuration
 ### Is package.json properly configured with the lint command?
 - [ ] Yes
 - [ ] No
 
-### Do all files pass the mandatory ESLint rules?
-#### Does the code use semicolons correctly?
+### Does the code use semicolons correctly?
 - [ ] Yes
 - [ ] No
-#### Is the code free of console statements?
+
+### Is the code free of console statements?
 - [ ] Yes
 - [ ] No
-#### Are all variables properly used?
+
+### Are all variables properly used?
 - [ ] Yes
 - [ ] No
-#### Is the code free of 'var' usage?
+
+### Is the code free of 'var' usage?
 - [ ] Yes
 - [ ] No
-#### Are all variables properly defined?
+
+### Are all variables properly defined?
 - [ ] Yes
 - [ ] No
 
