@@ -1,5 +1,3 @@
-# Questions for Landing-M1 Project
-
 ## HTML Structure and Semantic
 
 ### Does the HTML pass W3C validation without errors?
