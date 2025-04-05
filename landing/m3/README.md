@@ -76,7 +76,7 @@ Implement a slider component for showcasing content.
 
 Update a "Projects" section where 3 projects are displayed randomly each time the page is loaded or refreshed.
 
-> Use `projects.json` from [landing Assets](./../assets)
+> Use `projects.json` from [landing Assets](https://github.com/alem-platform/frontend/tree/main/landing%2Fassets)
 
 ### Project Card
 
