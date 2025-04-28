@@ -1,5 +1,5 @@
-## General Criteria
 ## Program Functionality 
+
 ### Does the project run without any console errors in modern browsers?
 - [ ] Yes
 - [ ] No
@@ -17,6 +17,7 @@
 - [ ] No
 
 ## Main Page
+
 ### Does the system automatically generate a unique random nickname for each user?
 - [ ] Yes
 - [ ] No
@@ -34,6 +35,7 @@
 - [ ] No
 
 ## Quick Game Mode
+
 ### Does clicking "Quick Game" correctly initiate player search?
 - [ ] Yes
 - [ ] No
@@ -51,6 +53,7 @@
 - [ ] No
 
 ## Game Logic
+
 ### Does the game correctly enforce turn-based gameplay?
 - [ ] Yes
 - [ ] No
@@ -68,6 +71,7 @@
 - [ ] No
 
 ## Offline Mode
+
 ### Does the offline game mode initialize and run properly?
 - [ ] Yes
 - [ ] No
@@ -81,6 +85,7 @@
 - [ ] No
 
 ## Error Handling
+
 ### Does the system notify users of network errors appropriately?
 - [ ] Yes
 - [ ] No
@@ -94,6 +99,7 @@
 - [ ] No
 
 ## Real-time Features
+
 ### Is at least 1 technology from serial "WebSocket", "Long Polling", "SSE" used?
 - [ ] Yes
 - [ ] No
@@ -103,6 +109,7 @@
 - [ ] No
 
 ## User Interface
+
 ### Is the interface responsive on different screen sizes?
 - [ ] Yes
 - [ ] No
@@ -116,6 +123,7 @@
 - [ ] No
 
 ## Code Quality
+
 ### Is the codebase organized in a clean and modular way?
 - [ ] Yes
 - [ ] No
@@ -129,6 +137,7 @@
 - [ ] No
 
 ## Performance
+
 ### Does the game respond quickly to user actions?
 - [ ] Yes
 - [ ] No
@@ -142,6 +151,7 @@
 - [ ] No
       
 ## Project Presentation and Code Defense
+
 ### Can the team explain their approach to implementing real-time multiplayer functionality (WebSocket, Long Polling, game state synchronization)?
 - [ ] Yes
 - [ ] No
@@ -155,6 +165,7 @@
 - [ ] No
 
 ## Detailed Feedback
+
 ### What was great? What did you like the most about the program and the team performance?
 
 ### What could be better? How those improvements could positively impact the outcome?
