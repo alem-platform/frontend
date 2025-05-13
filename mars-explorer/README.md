@@ -4,11 +4,11 @@
 
 By completing this project, you will:
 
-- Build a functional **Single Page Application (SPA)** from scratch using **TypeScript**.
-- Understand challenges of managing **state**, **UI updates**, and **navigation** in a SPA.
-- Implement a **component-based architecture** with lifecycle management.
-- Integrate a **public third-party API** (NASA Mars Rover Photos) for data fetching.
-- Use **templating** (Lodash `_.template`) for dynamic HTML generation.
+- Build a functional Single Page Application (SPA) from scratch using TypeScript.
+- Understand challenges of managing state, UI updates, and navigation in a SPA.
+- Implement a component-based architecture with lifecycle management.
+- Integrate a public third-party API (NASA Mars Rover Photos) for data fetching.
+- Use templating (Lodash `_.template`) for dynamic HTML generation.
 
 ## Abstract
 
@@ -67,8 +67,10 @@ const html = compiled({ photos: [...] }); // Pass your data here
 - [Lodash `_.template` Documentation](https://lodash.com/docs/4.17.15#template)
 - [Introduction to Single Page Applications (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/SPA)
 - [Vite Documentation](https://vitejs.dev/)
+- [Parcel Documentation](https://parceljs.org/)
 - [NASA Mars Rover Photos API Documentation](https://api.nasa.gov/) (specifically the Mars Rover Photos section)
 - [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Node.js](https://nodejs.org/) (v16 or later recommended)
 
 ## General Criteria
 
@@ -94,59 +96,59 @@ const html = compiled({ photos: [...] }); // Pass your data here
 
 - **Component-based architecture:**
 
-  - All UI elements are implemented as reusable components (`MarsPhotoCard`, `Input`, `Button`, `PageMarsRoverSearch`) extending `BaseComponent`.
-  - Each component manages its own state and updates the UI reactively.
-  - Dynamic rendering: Uses Lodash templates for page structure and renders child components in the correct DOM locations.
+  - Implement all UI elements as reusable components (`MarsPhotoCard`, `Input`, `Button`, `PageMarsRoverSearch`) extending `BaseComponent`.
+  - Each component should manage its own state and update the UI reactively.
+  - Implement dynamic rendering: Use Lodash templates for page structure and ensure child components render in the correct DOM locations.
 
 - **SPA & Routing:**
 
-  - The application uses a client-side router for navigation (hash-based or similar SPA routing).
-  - Navigating to a route loads the correct component and updates the view without a full page reload.
-  - Any unregistered route (including photo detail routes) should display a 404 page.
+  - The application should use a client-side router for navigation (hash-based or similar SPA routing).
+  - Navigating to a route should load the correct component and update the view without a full page reload.
+  - Any unregistered route (including photo detail routes) must display a 404 page.
 
 - **Mars Rover Search Page:**
 
-  - Displays a paginated grid of photo cards using `MarsPhotoCard` components.
-  - Includes input fields for rover name and Martian Sol, each with an associated `<label>` for accessibility.
-  - Includes pagination controls (Next/Previous buttons).
-  - Features a search button to fetch photos.
-  - Handles loading and error states in the UI.
-  - On initial page load, photos are automatically loaded and displayed (not an empty page).
-  - The default rover is "curiosity" and the default Martian Sol is 1000.
-  - When the user clicks the search button, a new request is made to the NASA API and results are updated.
+  - This page should display a paginated grid of photo cards using `MarsPhotoCard` components.
+  - It must include input fields for rover name and Martian Sol, each with an associated `<label>` for accessibility.
+  - It must include pagination controls (Next/Previous buttons).
+  - It must feature a search button to fetch photos.
+  - The UI should handle loading and error states appropriately.
+  - On initial page load, photos should be automatically loaded and displayed (not an empty page).
+  - The default rover must be "curiosity" and the default Martian Sol must be 1000.
+  - When the user clicks the search button, the application should make a new request to the NASA API and update the results.
 
 - **Pagination:**
 
-  - The gallery displays 25 photos per page (using NASA API pagination).
-  - Pagination is implemented using the NASA API's `page` parameter.
-  - Next/Previous buttons work and update the gallery.
+  - The gallery should display 25 photos per page (by utilizing NASA API pagination).
+  - Implement pagination using the NASA API's `page` parameter.
+  - Ensure Next/Previous buttons work correctly and update the gallery.
 
 - **Photo Card:**
 
-  - Each `MarsPhotoCard` displays a rover photo, camera name, Earth date, and rover name.
-  - Clicking a photo card navigates to a non-existent detail route, which should display a 404 page.
-  - Clicking a photo opens the original NASA image in a new tab (view full image).
+  - Each `MarsPhotoCard` should display a rover photo, camera name, Earth date, and rover name.
+  - Clicking a photo card should navigate to a non-existent detail route, which must display a 404 page.
+  - Clicking a photo should open the original NASA image in a new tab (view full image).
 
 - **Photo Detail Page:**
 
-  - The detailed page displays the full photo, description, camera info, rover info, and any other relevant details.
-  - The detailed page is accessible via a unique route (e.g., `/photo/:id` or similar).
+  - Implement a detailed page that displays the full photo, description, camera info, rover info, and any other relevant details.
+  - This detailed page must be accessible via a unique route (e.g., `/photo/:id` or similar).
 
 - **Input & Button Components:**
 
-  - The `Input` component is reusable and used for text/search inputs.
-  - The `Button` component is reusable and used for search and pagination buttons.
+  - The `Input` component must be reusable and used for text/search inputs.
+  - The `Button` component must be reusable and used for search and pagination buttons.
 
 - **API Integration & Security:**
 
-  - The app fetches Mars rover photos using the NASA Mars Rover Photos API.
-  - The NASA API key is stored securely (not in the repo, but in a config or environment variable).
-  - The NASA API base URL (`BASE_URL`) is stored in an environment variable and not hardcoded.
-  - No API keys are committed to the repository.
+  - The app must fetch Mars rover photos using the NASA Mars Rover Photos API.
+  - The NASA API key must be stored securely (not in the repo, but in a config or environment variable).
+  - The NASA API base URL (`BASE_URL`) must be stored in an environment variable and not hardcoded.
+  - Ensure no API keys are committed to the repository.
 
 - **Code Quality:**
-  - The codebase is free of dead code and unused files.
-  - Event listeners and subscriptions are properly cleaned up when components unmount.
+  - The codebase should be free of dead code and unused files.
+  - Ensure event listeners and subscriptions are properly cleaned up when components unmount.
 
 ## API Used
 
@@ -161,14 +163,6 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 - **Filter Photos:** Search by rover name (Curiosity, Opportunity, Spirit, Perseverance) and Martian Sol.
 - **Pagination:** Navigate through multiple pages of photo results (25 photos per page, using NASA API pagination).
 - **View full image:** Clicking a photo opens the original NASA image in a new tab.
-
-## Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or later recommended)
-- [npm](https://www.npmjs.com/) (usually comes with Node.js)
-- **Vite/Parcel:** You may use either as your build tool.
-- **NASA API Key:** You will need to obtain a free API key from [https://api.nasa.gov/](https://api.nasa.gov/) and configure it in `NasaMarsApiService.ts`.
-- **BASE_URL:** You must set `BASE_URL=https://api.nasa.gov/mars-photos/api/v1` in your `.env` file (do not hardcode in code).
 
 ## Starter Project
 
