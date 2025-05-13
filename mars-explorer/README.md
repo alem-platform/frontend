@@ -19,6 +19,8 @@ In this project, you will build a **Mars Explorer** that allows users to:
 - View a gallery of photos.
 - Handle loading states and potential API errors.
 
+![mars rover](./mars_rover.jpg)
+
 ## Context
 
 ### Imperative JavaScript
@@ -167,8 +169,7 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 
 You are provided with:
 
-- `BaseComponent.ts`: An abstract class for building components.
-- Basic project structure and configuration files.
+- [Basic project structure and configuration files](./project/)
 
 ## Guidelines from Author
 
