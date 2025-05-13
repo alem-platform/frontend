@@ -1,0 +1,491 @@
+/* project/src/styles.css */
+
+/* General Page Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top for longer content */
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  max-width: 960px; /* Max width for the main content area */
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* MarsRoverSearchPage Specific Styles */
+.mars-rover-search-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#mars-rover-search-heading {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Search Controls Styling */
+.mars-rover-search-controls {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 15px; /* Space between input fields and button */
+  align-items: center; /* Vertically align items */
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  /* Wrapper for our Input component */
+  flex-grow: 1; /* Allow inputs to take available space */
+  min-width: 200px; /* Minimum width for inputs */
+}
+
+.input-element {
+  /* The actual <input> tag */
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.input-element:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 120px; /* Ensure button has a decent width */
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+}
+
+/* Results Area Styling */
+.mars-rover-results-content {
+  padding-top: 10px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between photo cards */
+}
+
+/* MarsPhotoCard Specific Styles (Placeholder - adjust as needed) */
+.mars-photo-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden; /* Ensure image corners are rounded if image is direct child */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.mars-photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mars-photo-card__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make figure take full height of card */
+}
+
+.mars-photo-card__image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency, or use aspect-ratio */
+  object-fit: cover; /* Cover the area, might crop */
+  display: block; /* Remove extra space below image */
+}
+
+.mars-photo-card__image-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+.mars-photo-card__caption {
+  padding: 15px;
+  flex-grow: 1; /* Allow caption to take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.mars-photo-card__title {
+  font-size: 1.1em;
+  margin: 0 0 8px 0;
+  color: #34495e;
+}
+
+.mars-photo-card__camera,
+.mars-photo-card__rover,
+.mars-photo-card__date {
+  font-size: 0.85em;
+  color: #7f8c8d;
+  margin: 2px 0;
+}
+
+.mars-photo-card__link {
+  display: inline-block;
+  margin-top: auto; /* Push link to the bottom of the caption */
+  padding: 8px 12px;
+  background-color: #e9ecef;
+  color: #3498db;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.mars-photo-card__link:hover {
+  background-color: #dee2e6;
+  color: #2980b9;
+}
+
+/* Loading, Error, and Info Messages Styling */
+.loading-indicator,
+.error-message,
+.info-message {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.loading-indicator {
+  color: #2980b9;
+  background-color: #e7f3fe;
+  border: 1px solid #bde0fe;
+}
+
+.error-message {
+  color: #c0392b;
+  background-color: #fbeae5;
+  border: 1px solid #f6c6c4;
+}
+
+.info-message {
+  color: #7f8c8d;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+/* Basic Reset & Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 1em;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Loading & Error States */
+.loading-indicator,
+.error-message {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.1em;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fdd;
+  border: 1px solid #e74c3c;
+  border-radius: 4px;
+}
+
+/* Gallery Page Specific */
+.gallery-page {
+  /* Using #app for main container styling */
+}
+
+.gallery-search {
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-search-input {
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 300px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+/* Artwork Card */
+.artwork-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.artwork-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.artwork-card__figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure figure takes full card height */
+}
+
+.artwork-card__image {
+  display: block;
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area, crop if needed */
+  background-color: #f0f0f0; /* Placeholder bg */
+}
+
+.artwork-card__image-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  color: #888;
+  font-size: 0.9em;
+}
+
+.artwork-card__caption {
+  padding: 0.8em 1em;
+  background-color: #fff;
+  flex-grow: 1; /* Allow caption to fill remaining space */
+}
+
+.artwork-card__title {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 0.3em 0;
+  color: #333;
+  /* Limit title lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.artwork-card__artist,
+.artwork-card__date {
+  font-size: 0.85em;
+  color: #666;
+  margin: 0 0 0.2em 0;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  margin-top: 1em;
+  border-top: 1px solid #eee;
+}
+
+.pagination-info {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Generic Button Styling (apply to pagination buttons if needed) */
+/* Assuming your Button component renders a <button> */
+button.button-element {
+  /* Target the actual button rendered by Button component */
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  transition: background-color 0.2s ease;
+}
+
+button.button-element:hover {
+  background-color: #e8e8e8;
+}
+
+/* Artwork Detail Page */
+.artwork-detail-page {
+  /* Using #app for main container styling */
+}
+
+.artwork-details {
+  padding: 1em;
+}
+
+.artwork-details__title {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.artwork-details__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-bottom: 1.5em;
+}
+
+.artwork-details__image-container {
+  text-align: center;
+}
+
+.artwork-details__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-details__image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Ensure placeholder has some size */
+  background-color: #e0e0e0;
+  color: #888;
+  border-radius: 4px;
+}
+
+.artwork-details__info p,
+.artwork-details__info div {
+  margin-bottom: 0.8em;
+}
+
+.artwork-details__info strong {
+  color: #444;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #333;
+}
+
+.back-link:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+/* Pagination Controls Styling */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.page-info {
+  font-size: 1em;
+  color: #555;
+  margin: 0 10px;
+}
+
+.pagination-button {
+  /* General styling for pagination buttons, specific classes like */
+  /* .prev-button and .next-button can be used for further distinction if needed */
+  /* The .button-element class from Button.ts will also apply */
+  /* Example: Add some margin if not covered by .button-element */
+  /* margin: 0 5px; */
+}
+
+/* Ensure button-element styles are applied or define new ones */
+.button-element[disabled] {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.input-control-group {
+  display: flex;
+  flex-direction: column; /* Stack label on top of input */
+  gap: 5px; /* Space between label and input */
+  flex-grow: 1; /* Allow group to take space like input-wrapper */
+  min-width: 200px; /* Same as input-wrapper for consistency */
+}
+
+.input-label {
+  font-size: 0.9em;
+  color: #34495e;
+  font-weight: 500;
+  display: block; /* Ensure it takes its own line if not in flex column */
+}
