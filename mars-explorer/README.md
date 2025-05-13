@@ -172,17 +172,7 @@ You are provided with:
 
 ## Guidelines from Author
 
-1. **Component Lifecycle**: Pay attention to cleanup in your components. Memory leaks are a pain - make sure to remove event listeners and clear subscriptions when components unmount.
-
-2. **State Management**: Keep it simple. The EventBus pattern works great for this scale. Don't over-engineer with complex state management unless you really need it.
-
-3. **Error Boundaries**: Implement proper error handling and fallbacks.
-
-4. **API Keys**: Never commit API keys. Use environment variables or a config file that's gitignored.
-
-Feel free to refactor or improve any part of the codebase. The structure provided is just a starting point - make it your own!
-
-## Understanding the Provided Component Framework (`BaseComponent`)
+### Understanding the Provided Component Framework (`BaseComponent`)
 
 This project uses a custom **component-based architecture** built around the `BaseComponent` class (`src/core/BaseComponent.ts`). This class is a blueprint for creating reusable UI components.
 
@@ -225,6 +215,8 @@ This project uses a custom **component-based architecture** built around the `Ba
 - **Rendering and DOM Manipulation:**
   - [Rendering and `innerHTML` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
   - [Lodash `_.template` Documentation](https://lodash.com/docs/4.17.15#template)
+
+Feel free to refactor or improve any part of the codebase. The structure provided is just a starting point - make it your own!
 
 ## Author
 
