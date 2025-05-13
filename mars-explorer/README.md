@@ -207,14 +207,12 @@ This project uses a custom **component-based architecture** built around the `Ba
 ### Further Learning Resources
 
 - **Component-Based Architecture:**
-  - [Introduction to Component-Based Architecture (Smashing Magazine)](https://www.smashingmagazine.com/2021/02/component-based-architecture/)
   - [Thinking in Components (React Docs - conceptual, applies broadly)](https://react.dev/learn/thinking-in-react#thinking-in-components)
 - **Props & State in Components:**
   - [Components and Props (React Docs - conceptual)](https://react.dev/learn/passing-props-to-a-component)
   - [State: A Component's Memory (React Docs - conceptual)](https://react.dev/learn/state-a-components-memory)
 - **Rendering and DOM Manipulation:**
   - [Rendering and `innerHTML` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
-  - [Lodash `_.template` Documentation](https://lodash.com/docs/4.17.15#template)
 
 Feel free to refactor or improve any part of the codebase. The structure provided is just a starting point - make it your own!
 
