@@ -147,8 +147,14 @@ const html = compiled({ photos: [...] }); // Pass your data here
   - Ensure no API keys are committed to the repository.
 
 - **Code Quality:**
+
   - The codebase should be free of dead code and unused files.
   - Ensure event listeners and subscriptions are properly cleaned up when components unmount.
+
+- **Mars Rover Photo Gallery:** View a paginated grid of photos from Mars rovers.
+- **Filter Photos:** Search by rover name (Curiosity, Opportunity, Spirit, Perseverance) and Martian Sol.
+- **Pagination:** Navigate through multiple pages of photo results (25 photos per page, using NASA API pagination).
+- **View full image:** Clicking a photo opens the original NASA image in a new tab.
 
 ## API Used
 
@@ -156,13 +162,6 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 
 - **API Documentation:** [https://api.nasa.gov/](https://api.nasa.gov/) (look for Mars Rover Photos section)
 - **Get an API Key:** [https://api.nasa.gov/](https://api.nasa.gov/) (a key is required)
-
-## Features
-
-- **Mars Rover Photo Gallery:** View a paginated grid of photos from Mars rovers.
-- **Filter Photos:** Search by rover name (Curiosity, Opportunity, Spirit, Perseverance) and Martian Sol.
-- **Pagination:** Navigate through multiple pages of photo results (25 photos per page, using NASA API pagination).
-- **View full image:** Clicking a photo opens the original NASA image in a new tab.
 
 ## Starter Project
 
