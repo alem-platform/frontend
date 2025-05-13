@@ -1,7 +1,4 @@
 import { BaseComponent, BaseProps } from "../../core/BaseComponent.js";
-import { WidgetMarsPhotoCard } from "../../widgets/WidgetMarsPhotoCard/index.js";
-import { Button } from "../../shared/components/button/index.js";
-import { Input } from "../../shared/components/input/index.js";
 
 declare const _: any;
 
