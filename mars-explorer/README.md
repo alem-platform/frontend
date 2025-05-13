@@ -175,7 +175,6 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 You are provided with:
 
 - `BaseComponent.ts`: An abstract class for building components.
-- `EventBus.ts`: A simple event emitter for component communication.
 - Basic project structure and configuration files.
 
 ## Guidelines from Author
@@ -189,6 +188,50 @@ You are provided with:
 4. **API Keys**: Never commit API keys. Use environment variables or a config file that's gitignored.
 
 Feel free to refactor or improve any part of the codebase. The structure provided is just a starting point - make it your own!
+
+## Understanding the Provided Component Framework (`BaseComponent`)
+
+This project uses a custom **component-based architecture** built around the `BaseComponent` class (`src/core/BaseComponent.ts`). This class is a blueprint for creating reusable UI components.
+
+### Core Concepts of `BaseComponent`
+
+#### 1. Props (`P`) - Configuring Your Components
+
+- **Concept:** Props pass data from a parent to a child component, configuring its appearance and behavior. Props should be treated as read-only by the child.
+
+#### 2. State (`S`) - Managing Internal Data
+
+- **Concept:** State is data managed _internally_ by a component. Changes to state (e.g., from user interaction) can trigger UI updates.
+- **In `BaseComponent`:** Update state _only_ with `this.setState()`. This method also tells `BaseComponent` to re-render.
+
+#### 3. `constructor(tagName: string, props: P, initialState: S = {} as S)`
+
+- **Concept:** Initializes a new component instance.
+
+#### 4. `render(): string` - Defining the Visual Output
+
+- **Concept:** Describes the component's UI based on current `props` and `state`.
+- **In `BaseComponent`:** This method _must_ be implemented. It returns an HTML string. `BaseComponent` uses this string to set the `innerHTML` of the component's root DOM element. Use Lodash templates (`_.template`) for dynamic HTML.
+
+#### 5. `setState(newState: Partial<S>)` - Triggering UI Updates
+
+- **Concept:** The way to update a component's internal state and signal that its UI needs to refresh.
+
+#### 6. Lifecycle Methods - Hooks into a Component's Life
+
+- **Concept:** [Special functions that run at specific phases of a component's existence.](https://react.dev/learn/synchronizing-with-effects#the-lifecycle-of-reactive-effects)
+
+### Further Learning Resources
+
+- **Component-Based Architecture:**
+  - [Introduction to Component-Based Architecture (Smashing Magazine)](https://www.smashingmagazine.com/2021/02/component-based-architecture/)
+  - [Thinking in Components (React Docs - conceptual, applies broadly)](https://react.dev/learn/thinking-in-react#thinking-in-components)
+- **Props & State in Components:**
+  - [Components and Props (React Docs - conceptual)](https://react.dev/learn/passing-props-to-a-component)
+  - [State: A Component's Memory (React Docs - conceptual)](https://react.dev/learn/state-a-components-memory)
+- **Rendering and DOM Manipulation:**
+  - [Rendering and `innerHTML` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+  - [Lodash `_.template` Documentation](https://lodash.com/docs/4.17.15#template)
 
 ## Author
 
