@@ -153,7 +153,7 @@ You can write the back and front yourself, but I recommend that in this project 
 
 This project has been created by:
 
-Dias Kappassov, FrontEnd Developer at Doodocs.kz
+Dias Kappassov, Software Developer at Doodocs.kz
 
 Contacts:
 
