@@ -18,7 +18,7 @@ In this project, you will build a **Mars Explorer** that allows users to:
 - Filter photos by rover name and [Martian Sol (day)](https://en.wikipedia.org/wiki/Mars_sol).
 - Handle loading states and potential API errors.
 
-![mars rover](https://github.com/alem-platform/frontend/blob/mars-explorer/mars_rover.jpg)
+![mars rover](https://github.com/alem-platform/frontend/blob/main/mars-explorer/mars_rover.jpg)
 
 ## Context
 
@@ -177,7 +177,7 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 
 You are provided with:
 
-- [Basic project structure and configuration files](https://github.com/alem-platform/frontend/blob/mars-explorer/project/)
+- [Basic project structure and configuration files](https://github.com/alem-platform/frontend/tree/main/mars-explorer/project)
 
 ## Guidelines from Author
 
