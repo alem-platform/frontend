@@ -19,7 +19,7 @@ In this project, you will build a **Mars Explorer** that allows users to:
 - View a gallery of photos.
 - Handle loading states and potential API errors.
 
-![mars rover](./mars_rover.jpg)
+![mars rover](https://github.com/alem-platform/frontend/blob/mars-explorer/mars_rover.jpg)
 
 ## Context
 
@@ -169,7 +169,7 @@ This project uses the public API provided by **NASA**, specifically the **Mars R
 
 You are provided with:
 
-- [Basic project structure and configuration files](./project/)
+- [Basic project structure and configuration files](https://github.com/alem-platform/frontend/blob/mars-explorer/project/)
 
 ## Guidelines from Author
 
