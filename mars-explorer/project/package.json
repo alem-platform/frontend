@@ -1,0 +1,21 @@
+{
+  "name": "realtime-chat-spa",
+  "version": "1.0.0",
+  "description": "Real-Time Chat SPA using TypeScript, Lodash, and Ably",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.1.5",
+    "parcel": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}
