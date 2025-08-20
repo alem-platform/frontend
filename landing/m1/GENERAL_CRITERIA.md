@@ -27,18 +27,6 @@
 - [ ] Yes
 - [ ] No
 
-### Are all variables properly used?
-- [ ] Yes
-- [ ] No
-
-### Is the code free of 'var' usage?
-- [ ] Yes
-- [ ] No
-
-### Are all variables properly defined?
-- [ ] Yes
-- [ ] No
-
 ### Is the code free of any linter errors or warnings?
 - [ ] Yes
 - [ ] No
