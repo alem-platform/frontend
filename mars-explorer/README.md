@@ -14,7 +14,7 @@ By completing this project, you will:
 
 In this project, you will build a **Mars Explorer** that allows users to:
 
-- View a gallery of photos taken by NASA's [Mars rovers](https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/) (Curiosity, Opportunity, Spirit, Perseverance).
+- View a gallery of photos taken by NASA's [Mars rovers](https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/) (Curiosity, Perseverance).
 - Filter photos by rover name and [Martian Sol (day)](https://en.wikipedia.org/wiki/Mars_sol).
 - Handle loading states and potential API errors.
 
@@ -69,7 +69,6 @@ const html = compiled({ photos: [...] }); // Pass your data here
 - [Introduction to Single Page Applications (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/SPA)
 - [Vite Documentation](https://vitejs.dev/)
 - [Parcel Documentation](https://parceljs.org/)
-- [NASA Mars Rover Photos API Documentation](https://api.nasa.gov/) (specifically the Mars Rover Photos section)
 - [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Node.js](https://nodejs.org/) (v16 or later recommended)
 
@@ -101,7 +100,7 @@ const html = compiled({ photos: [...] }); // Pass your data here
 
 ### Filter Photos
 
-- Search by rover name (Curiosity, Opportunity, Spirit, Perseverance) and Martian Sol.
+- Search by rover name (Curiosity, Perseverance) and Martian Sol.
 
 ### Pagination
 
@@ -166,12 +165,98 @@ const html = compiled({ photos: [...] }); // Pass your data here
 - The codebase should be free of dead code and unused files.
 - Ensure event listeners and subscriptions are properly cleaned up when components unmount.
 
-## API Used
+## API Documentation
 
-This project uses the public API provided by **NASA**, specifically the **Mars Rover Photos API**.
+  This API provides access to photos taken by NASA's Mars rovers: **Curiosity** and **Perseverance**. You can query photos by Martian day (sol),
+  filter by camera, and paginate through results.
 
-- **API Documentation:** [https://api.nasa.gov/](https://api.nasa.gov/) (look for Mars Rover Photos section)
-- **Get an API Key:** [https://api.nasa.gov/](https://api.nasa.gov/) (a key is required)
+  **Base URL**: `http://localhost:3000` **ASAN  NEW ADDRESS HERE**
+
+  ### Available Endpoints
+
+  #### 1. Get Rover Photos
+
+  Retrieve photos from a specific rover and sol.
+
+  **Endpoint**: `GET /api/v1/rovers/{rover_name}/photos`
+
+  **Path Parameters**:
+  - `rover_name` - The name of the rover: `curiosity` or `perseverance`
+
+  **Query Parameters**:
+  - `sol` (optional) - Martian day number (0 to current max). Defaults to sol 1000 for Curiosity, 1650 for Perseverance
+  - `camera` (optional) - Filter by camera name (case-insensitive). Examples: `NAVCAM`, `FHAZ`, `MAST`
+  - `page` (optional) - Page number for pagination (default: 0). Each page contains 25 photos
+
+  **Example Requests**:
+  ```bash
+  # Get photos from Curiosity on sol 1000
+  GET /api/v1/rovers/curiosity/photos?sol=1000
+
+  # Get photos from Perseverance on sol 500 with NAVCAM camera
+  GET /api/v1/rovers/perseverance/photos?sol=500&camera=NAVCAM
+
+  # Get second page of results
+  GET /api/v1/rovers/curiosity/photos?sol=100&page=1
+
+  Response Format:
+  {
+    "photos": [
+      {
+        "id": "curiosity-1000-0",
+        "sol": 1000,
+        "camera": {
+          "name": "NAVCAM",
+          "full_name": "Navigation Camera"
+        },
+        "img_src": "http://mars.jpl.nasa.gov/msl-raw-images/...",
+        "earth_date": "2015-05-30",
+        "rover": {
+          "name": "Curiosity",
+          "landing_date": "2012-08-06",
+          "launch_date": "2011-11-26",
+          "status": "active"
+        }
+      }
+    ],
+    "page": 0,
+    "total_results": 870,
+    "total_pages": 35
+  }
+```
+  #### 2. Health Check
+
+  Check API status and available data.
+```bash
+  Endpoint: GET /health
+
+  Example Request:
+  GET /health
+
+  Response Format:
+  {
+    "status": "ok",
+    "rovers": ["curiosity", "perseverance"],
+    "note": "All sols are supported. Data is fetched from NASA and cached automatically.",
+    "cached_sols": [
+      {
+        "rover": "curiosity",
+        "sol": 1000,
+        "note": "Pre-cached static file available"
+      },
+      {
+        "rover": "perseverance",
+        "sol": 1650,
+        "note": "Pre-cached static file available"
+      }
+    ]
+  }
+```
+  #### 3. API Documentation
+
+  Get additional API information and examples.
+
+  Endpoint: GET /
 
 ## Starter Project
 
