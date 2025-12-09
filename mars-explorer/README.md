@@ -174,10 +174,11 @@ VITE_API_KEY=   # leave empty
 ## API Used
 
 This project uses a **custom proxy server** instead of the public NASA API.
+
 ### Base URL
 
-```json
-https://alem.school/mars/api/v1
+```bash
+https://alem.school/mars/
 ```
 
 ### Available Endpoints
