@@ -157,9 +157,14 @@ const html = compiled({ photos: [...] }); // Pass your data here
 
 ### API Integration & Security
 
-- The app must fetch Mars rover photos using the NASA Mars Rover Photos API.
-- The NASA API key must be stored securely (not in the repo, but in a config or environment variable).
-- The NASA API base URL (`BASE_URL`) must be stored in an environment variable and not hardcoded.
+- The app must fetch Mars rover photos using the Custom Mars Rover API Proxy.
+- The proxy is required due to recent instability of the public NASA Mars Rover Photos API.
+- No API key is required; all data is provided through the proxy.
+- The base URL must be stored in an environment variable (not hardcoded):
+```env
+VITE_API_BASE_URL=https://alem.school/mars/api/v1
+VITE_API_KEY=   # leave empty
+```
 
 ### Code Quality
 
@@ -168,10 +173,45 @@ const html = compiled({ photos: [...] }); // Pass your data here
 
 ## API Used
 
-This project uses the public API provided by **NASA**, specifically the **Mars Rover Photos API**.
+This project uses a **custom proxy server** instead of the public NASA API.
+### Base URL
 
-- **API Documentation:** [https://api.nasa.gov/](https://api.nasa.gov/) (look for Mars Rover Photos section)
-- **Get an API Key:** [https://api.nasa.gov/](https://api.nasa.gov/) (a key is required)
+```json
+https://alem.school/mars/api/v1
+```
+
+### Available Endpoints
+
+| Purpose            | Method | Endpoint                                                                   |
+| ------------------ | ------ | -------------------------------------------------------------------------- |
+| Fetch rover photos | GET    | `/api/v1/rovers/{rover_name}/photos?sol={sol}&camera={camera}&page={page}` |
+| API health check   | GET    | `/health`                                                                  |
+| API documentation  | GET    | `/`                                                                        |
+
+### Example Requests
+
+```bash
+/api/v1/rovers/curiosity/photos?sol=1000
+/api/v1/rovers/curiosity/photos?sol=100&camera=NAVCAM
+/api/v1/rovers/perseverance/photos?sol=1650
+/api/v1/rovers/perseverance/photos?sol=500&page=1
+
+```
+
+### Notes
+
+- Data is fetched directly from NASA and automatically cached.
+- Pagination always returns 25 photos per page.
+- Cached responses are stored for 30 days.
+- Supported rovers: curiosity, perseverance.
+
+### Our proxy server:
+
+- Mirrors the official NASA Mars Rover Photos API structure.
+- Responds faster.
+- Requires no API key.
+- Is fully compatible with the SPA architecture.
+
 
 ## Starter Project
 
