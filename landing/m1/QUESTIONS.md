@@ -68,10 +68,6 @@
 - [ ] Yes
 - [ ] No
 
-### Does clicking on a phone number initiate a call on mobile devices?
-- [ ] Yes
-- [ ] No
-
 ### Does clicking on the address open a map with the location shown (e.g., Google Maps) in new tab?
 - [ ] Yes
 - [ ] No
